@@ -1,0 +1,166 @@
+{
+  "sample_seed": 1,
+  "n_per_stratum": 12,
+  "opening_inventory_mode": "gaussian_target",
+  "planner_seed_base": 0,
+  "stratification_zero_fraction_days_end_exclusive": 1577,
+  "n_series": 324,
+  "n_missing_price": 0,
+  "shock_day_offset": 189,
+  "shock_abs_day": 1766,
+  "shock_multiplier": 1.8,
+  "first_refit_review_day_after_shock": 1794,
+  "days_to_first_refit": 28,
+  "post_shock_window_days": 28,
+  "segment_days": {
+    "pre": 189,
+    "post_pre_refit": 28,
+    "post_after_first_refit": 28,
+    "post_late": 119
+  },
+  "segments": {
+    "pre": {
+      "baseline": {
+        "holding": 551.3976715541886,
+        "stockout": 33834.35846159633,
+        "total": 34385.75613315051
+      },
+      "sba": {
+        "holding": 662.2528416417053,
+        "stockout": 17330.688217394123,
+        "total": 17992.941059035827
+      },
+      "ss": {
+        "holding": 1105.0655880196966,
+        "stockout": 7937.383541872379,
+        "total": 9042.449129892077
+      },
+      "ml": {
+        "holding": 2135.692019991122,
+        "stockout": 2981.483491901514,
+        "total": 5117.175511892636
+      },
+      "fused": {
+        "holding": 4338.781962986772,
+        "stockout": 723.5238599604173,
+        "total": 5062.305822947189
+      }
+    },
+    "post_pre_refit": {
+      "baseline": {
+        "holding": 51.64548649144553,
+        "stockout": 22673.830762015514,
+        "total": 22725.47624850696
+      },
+      "sba": {
+        "holding": 59.513244175218254,
+        "stockout": 19051.711153403347,
+        "total": 19111.224397578564
+      },
+      "ss": {
+        "holding": 108.42733809212596,
+        "stockout": 10031.290874032053,
+        "total": 10139.718212124179
+      },
+      "ml": {
+        "holding": 250.1817728811924,
+        "stockout": 6593.709941388342,
+        "total": 6843.891714269534
+      },
+      "fused": {
+        "holding": 694.910942201772,
+        "stockout": 382.61680693969123,
+        "total": 1077.5277491414631
+      }
+    },
+    "post_after_first_refit": {
+      "baseline": {
+        "holding": 54.62596394166653,
+        "stockout": 23958.99293390084,
+        "total": 24013.61889784251
+      },
+      "sba": {
+        "holding": 101.36682269029852,
+        "stockout": 8283.169015493697,
+        "total": 8384.535838183996
+      },
+      "ss": {
+        "holding": 147.71756123997835,
+        "stockout": 5054.455775905868,
+        "total": 5202.173337145847
+      },
+      "ml": {
+        "holding": 484.205559380931,
+        "stockout": 1066.3933265115484,
+        "total": 1550.5988858924793
+      },
+      "fused": {
+        "holding": 1220.888595979807,
+        "stockout": 177.96458459133657,
+        "total": 1398.8531805711436
+      }
+    },
+    "post_late": {
+      "baseline": {
+        "holding": 189.74010713754458,
+        "stockout": 112842.73221722145,
+        "total": 113032.472324359
+      },
+      "sba": {
+        "holding": 559.8475061187402,
+        "stockout": 29477.17846915387,
+        "total": 30037.025975272612
+      },
+      "ss": {
+        "holding": 859.8612499715499,
+        "stockout": 17814.059202996956,
+        "total": 18673.920452968505
+      },
+      "ml": {
+        "holding": 2251.253820691773,
+        "stockout": 6311.259514600469,
+        "total": 8562.513335292242
+      },
+      "fused": {
+        "holding": 5489.78949104569,
+        "stockout": 2043.056647317594,
+        "total": 7532.846138363284
+      }
+    }
+  },
+  "significance_fused_vs_ml": {
+    "pre": {
+      "comparison": "fused vs ml, pre",
+      "wilcoxon_signed_rank_p": 2.9864709937180103e-16,
+      "bootstrap_95ci_pct_change": [
+        -30.374352161185303,
+        21.232401491416002
+      ]
+    },
+    "post_pre_refit": {
+      "comparison": "fused vs ml, post_pre_refit",
+      "wilcoxon_signed_rank_p": 0.9801430016297826,
+      "bootstrap_95ci_pct_change": [
+        73.77105274848877,
+        89.93071133805954
+      ]
+    },
+    "post_after_first_refit": {
+      "comparison": "fused vs ml, post_after_first_refit",
+      "wilcoxon_signed_rank_p": 7.258683539804581e-24,
+      "bootstrap_95ci_pct_change": [
+        -98.70986231247467,
+        53.0418717495532
+      ]
+    },
+    "post_late": {
+      "comparison": "fused vs ml, post_late",
+      "wilcoxon_signed_rank_p": 1.2614526390384703e-21,
+      "bootstrap_95ci_pct_change": [
+        -41.95278565097053,
+        39.61617368627114
+      ]
+    }
+  },
+  "runtime_seconds": 67.6962251663208
+}

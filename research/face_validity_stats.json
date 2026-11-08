@@ -1,0 +1,44 @@
+{
+  "order_demand_ratio": {
+    "n": 324,
+    "n_total": 324,
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.5345404580449491,
+    "p75": 0.8002725150748882,
+    "max": 1.111777251184834,
+    "n_over_10x": 0
+  },
+  "holding_dominated_loss": {
+    "n_losers_vs_naive": 69,
+    "n_holding_dominated": 66,
+    "definition": "fused_holding > fused_stockout on that series (not a delta vs. baseline)"
+  },
+  "realized_service_levels": {
+    "baseline": {
+      "unmet_units": 26845.429828698376,
+      "total_demand_units": 120695.0,
+      "realized_service_level": 0.7775762887551401
+    },
+    "sba": {
+      "unmet_units": 9868.865358810868,
+      "total_demand_units": 120695.0,
+      "realized_service_level": 0.918233022421717
+    },
+    "ss": {
+      "unmet_units": 4709.8861932748505,
+      "total_demand_units": 120695.0,
+      "realized_service_level": 0.9609769568476337
+    },
+    "ml": {
+      "unmet_units": 1861.6576586116114,
+      "total_demand_units": 120695.0,
+      "realized_service_level": 0.9845755196270631
+    },
+    "fused": {
+      "unmet_units": 597.8214720897286,
+      "total_demand_units": 120695.0,
+      "realized_service_level": 0.9950468414425641
+    }
+  }
+}

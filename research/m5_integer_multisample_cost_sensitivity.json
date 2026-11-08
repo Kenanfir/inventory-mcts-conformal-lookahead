@@ -1,0 +1,3825 @@
+{
+  "status": "complete",
+  "design": {
+    "sample_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "n_per_stratum": 12,
+    "opening_inventory_mode": "gaussian_target",
+    "planner_seed_base": 0,
+    "integer_order_units": true,
+    "paired_unit": "item-store series within each sample",
+    "cross_sample_summary": "descriptive mean and range over eight draws; no cross-draw inferential claim",
+    "software_versions": {
+      "python": "3.14.3",
+      "numpy": "2.4.2",
+      "scipy": "1.17.1",
+      "pandas": "3.0.0",
+      "lightgbm": "4.7.0",
+      "scikit_learn": "1.9.1"
+    },
+    "reused_seed0_sensitivity": "research/m5_integer_order_sensitivity_analysis.json",
+    "scenarios": [
+      {
+        "axis": "stockout_multiplier",
+        "value": 0.25,
+        "holding_rate": 0.2,
+        "stockout_multiplier": 0.25
+      },
+      {
+        "axis": "stockout_multiplier",
+        "value": 0.5,
+        "holding_rate": 0.2,
+        "stockout_multiplier": 0.5
+      },
+      {
+        "axis": "stockout_multiplier",
+        "value": 0.75,
+        "holding_rate": 0.2,
+        "stockout_multiplier": 0.75
+      },
+      {
+        "axis": "stockout_multiplier",
+        "value": 2.0,
+        "holding_rate": 0.2,
+        "stockout_multiplier": 2.0
+      },
+      {
+        "axis": "holding_rate",
+        "value": 0.15,
+        "holding_rate": 0.15,
+        "stockout_multiplier": 1.0
+      },
+      {
+        "axis": "holding_rate",
+        "value": 0.25,
+        "holding_rate": 0.25,
+        "stockout_multiplier": 1.0
+      },
+      {
+        "axis": "holding_rate",
+        "value": 0.35,
+        "holding_rate": 0.35,
+        "stockout_multiplier": 1.0
+      }
+    ]
+  },
+  "rows": [
+    {
+      "sample_seed": 0,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 21355.34877375343,
+        "sba_croston": 7782.84100094353,
+        "tuned_s_s": 5804.466731050281,
+        "pooled_lightgbm": 3929.5738056242067,
+        "monte_carlo_lookahead": 8699.227154285152
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 59.26441077386267,
+        "vs_sba": -11.77444269040735,
+        "vs_tuned_s_s": -49.87125531704242,
+        "vs_pooled_lightgbm": -121.37838820674074
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 134,
+        "vs_sba": 80,
+        "vs_tuned_s_s": 31,
+        "vs_pooled_lightgbm": 8
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.5023452013328252,
+          "bootstrap_95ci_pct_change": [
+            42.61973218584204,
+            69.76050145526533
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.327180749423603e-16,
+          "bootstrap_95ci_pct_change": [
+            -34.007883510445374,
+            7.646234482375578
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 7.3982788703106105e-37,
+          "bootstrap_95ci_pct_change": [
+            -83.30998332254593,
+            -20.62826486640703
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.88285964899711e-51,
+          "bootstrap_95ci_pct_change": [
+            -146.50627703110655,
+            -100.3685616304657
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 16130.719913753941,
+        "sba_croston": 8358.848630773258,
+        "tuned_s_s": 5619.3613936958,
+        "pooled_lightgbm": 5558.662182066467,
+        "monte_carlo_lookahead": 9088.089794959775
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 43.659738414955875,
+        "vs_sba": -8.724181958527177,
+        "vs_tuned_s_s": -61.72816016345632,
+        "vs_pooled_lightgbm": -63.49419153910918
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 134,
+        "vs_sba": 92,
+        "vs_tuned_s_s": 42,
+        "vs_pooled_lightgbm": 26
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.36081939549122555,
+          "bootstrap_95ci_pct_change": [
+            26.35421285065468,
+            54.9097692212858
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 4.07015022311094e-12,
+          "bootstrap_95ci_pct_change": [
+            -25.766302428663572,
+            4.443328915041108
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.2112166376351166e-37,
+          "bootstrap_95ci_pct_change": [
+            -83.85483403707792,
+            -44.158279686389676
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.942210174294215e-39,
+          "bootstrap_95ci_pct_change": [
+            -96.61612404192613,
+            -38.27121504371756
+          ]
+        }
+      ],
+      "runtime_seconds": 58.15445613861084,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 20601.022331875156,
+        "sba_croston": 7835.500010576032,
+        "tuned_s_s": 5593.301316840512,
+        "pooled_lightgbm": 4826.761674068538,
+        "monte_carlo_lookahead": 9383.931399500441
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 54.449195538315344,
+        "vs_sba": -19.761743179559723,
+        "vs_tuned_s_s": -67.77088999741466,
+        "vs_pooled_lightgbm": -94.41464139228171
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 123,
+        "vs_sba": 84,
+        "vs_tuned_s_s": 34,
+        "vs_pooled_lightgbm": 13
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.3846371759999566,
+          "bootstrap_95ci_pct_change": [
+            31.82915482551946,
+            67.09409753013583
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 4.573753507153584e-16,
+          "bootstrap_95ci_pct_change": [
+            -38.49811447031724,
+            -6.3118953934798485
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.412837456913009e-39,
+          "bootstrap_95ci_pct_change": [
+            -91.58440561271966,
+            -49.11973103769758
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.178001998241162e-48,
+          "bootstrap_95ci_pct_change": [
+            -130.97712342433024,
+            -64.38171849531012
+          ]
+        }
+      ],
+      "runtime_seconds": 59.34987211227417,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 16806.07359736676,
+        "sba_croston": 8452.42842425673,
+        "tuned_s_s": 5739.37278426508,
+        "pooled_lightgbm": 5468.523608356356,
+        "monte_carlo_lookahead": 9685.836828536787
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 42.367045030349026,
+        "vs_sba": -14.592355502714804,
+        "vs_tuned_s_s": -68.76124260635648,
+        "vs_pooled_lightgbm": -77.11977715038165
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 120,
+        "vs_sba": 78,
+        "vs_tuned_s_s": 37,
+        "vs_pooled_lightgbm": 19
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.1845569405646562,
+          "bootstrap_95ci_pct_change": [
+            27.236372901680586,
+            53.52393413503409
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 6.952494874977293e-16,
+          "bootstrap_95ci_pct_change": [
+            -33.15367796530101,
+            1.680171532620357
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 5.356338261274798e-41,
+          "bootstrap_95ci_pct_change": [
+            -88.20991016222169,
+            -51.49703718705105
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.7284060922875852e-43,
+          "bootstrap_95ci_pct_change": [
+            -121.95959371303023,
+            -39.48612425806466
+          ]
+        }
+      ],
+      "runtime_seconds": 57.855916023254395,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 15602.434136393233,
+        "sba_croston": 7777.72003209834,
+        "tuned_s_s": 5478.89611803227,
+        "pooled_lightgbm": 4637.088846479519,
+        "monte_carlo_lookahead": 9119.751580518252
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 41.54917430962834,
+        "vs_sba": -17.254819444276738,
+        "vs_tuned_s_s": -66.45235434384517,
+        "vs_pooled_lightgbm": -96.66976162084913
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 117,
+        "vs_sba": 75,
+        "vs_tuned_s_s": 21,
+        "vs_pooled_lightgbm": 18
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.3623787330002114,
+          "bootstrap_95ci_pct_change": [
+            24.735892778400522,
+            53.309611120802
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.0821038428537207e-19,
+          "bootstrap_95ci_pct_change": [
+            -35.74338477718535,
+            -3.394578506555474
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 6.1433228151020965e-46,
+          "bootstrap_95ci_pct_change": [
+            -98.19447248468948,
+            -39.746570926585555
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.1730957148250955e-48,
+          "bootstrap_95ci_pct_change": [
+            -126.57548344808936,
+            -71.87236921173793
+          ]
+        }
+      ],
+      "runtime_seconds": 58.71123695373535,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 20041.97269326396,
+        "sba_croston": 9081.223572307676,
+        "tuned_s_s": 5893.090207700483,
+        "pooled_lightgbm": 5114.404835507695,
+        "monte_carlo_lookahead": 8830.317310237588
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 55.94087745062427,
+        "vs_sba": 2.762912509226212,
+        "vs_tuned_s_s": -49.841882594959074,
+        "vs_pooled_lightgbm": -72.65581420014873
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 131,
+        "vs_sba": 87,
+        "vs_tuned_s_s": 39,
+        "vs_pooled_lightgbm": 21
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.9686561771329346,
+          "bootstrap_95ci_pct_change": [
+            43.79691506002068,
+            64.32287772398139
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 9.364289325986572e-10,
+          "bootstrap_95ci_pct_change": [
+            -12.247913991893018,
+            14.32421340077493
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 6.538768809030882e-35,
+          "bootstrap_95ci_pct_change": [
+            -74.49350269121909,
+            -29.76001805966588
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 6.587612322804221e-43,
+          "bootstrap_95ci_pct_change": [
+            -101.40724861035173,
+            -49.420497629335266
+          ]
+        }
+      ],
+      "runtime_seconds": 88.76811194419861,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 17022.91647669345,
+        "sba_croston": 7557.552192413172,
+        "tuned_s_s": 4874.702751625011,
+        "pooled_lightgbm": 4650.122829254318,
+        "monte_carlo_lookahead": 8574.564584949927
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 49.62928592941401,
+        "vs_sba": -13.456902005357074,
+        "vs_tuned_s_s": -75.89922959080009,
+        "vs_pooled_lightgbm": -84.39436762845514
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 135,
+        "vs_sba": 93,
+        "vs_tuned_s_s": 31,
+        "vs_pooled_lightgbm": 19
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.9197210291709901,
+          "bootstrap_95ci_pct_change": [
+            30.899815833259133,
+            62.43207575738527
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.9425134671534258e-10,
+          "bootstrap_95ci_pct_change": [
+            -28.126148936441044,
+            -2.1239770853865987
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.9987905949957205e-40,
+          "bootstrap_95ci_pct_change": [
+            -94.76357551659692,
+            -60.681754340062405
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.4212881332618678e-48,
+          "bootstrap_95ci_pct_change": [
+            -128.78254346667552,
+            -44.63082161911038
+          ]
+        }
+      ],
+      "runtime_seconds": 175.8752179145813,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.25,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 27153.734277687166,
+        "sba_croston": 7715.9647144923065,
+        "tuned_s_s": 5644.250890056655,
+        "pooled_lightgbm": 4148.356730282236,
+        "monte_carlo_lookahead": 8813.45948424333
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 67.54236675474301,
+        "vs_sba": -14.223688292530468,
+        "vs_tuned_s_s": -56.149321777488595,
+        "vs_pooled_lightgbm": -112.45664385385928
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 132,
+        "vs_sba": 86,
+        "vs_tuned_s_s": 38,
+        "vs_pooled_lightgbm": 16
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.9111790317050039,
+          "bootstrap_95ci_pct_change": [
+            37.69886557286642,
+            81.355766102529
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 9.024821527112434e-14,
+          "bootstrap_95ci_pct_change": [
+            -28.543778699179107,
+            -2.2560332515531685
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.2390825100877933e-33,
+          "bootstrap_95ci_pct_change": [
+            -79.92289532515724,
+            -36.92841524466159
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.3520931603164624e-46,
+          "bootstrap_95ci_pct_change": [
+            -141.57919942077334,
+            -84.18165782792747
+          ]
+        }
+      ],
+      "runtime_seconds": 171.18659806251526,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 0,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 41711.4894583444,
+        "sba_croston": 14417.358222706589,
+        "tuned_s_s": 9262.042742733662,
+        "pooled_lightgbm": 5143.652969771243,
+        "monte_carlo_lookahead": 10094.641257809093
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 75.79889524709922,
+        "vs_sba": 29.982725670847532,
+        "vs_tuned_s_s": -8.989361614948589,
+        "vs_pooled_lightgbm": -96.25432192129475
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 169,
+        "vs_sba": 166,
+        "vs_tuned_s_s": 77,
+        "vs_pooled_lightgbm": 25
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.093193655134869e-07,
+          "bootstrap_95ci_pct_change": [
+            66.0084427673952,
+            81.88649390281435
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.028076685431802313,
+          "bootstrap_95ci_pct_change": [
+            15.202686500298189,
+            42.05465033804986
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.79531526345715e-17,
+          "bootstrap_95ci_pct_change": [
+            -39.31840677126778,
+            14.877066406899138
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.943682418830902e-39,
+          "bootstrap_95ci_pct_change": [
+            -129.1092441535322,
+            -71.0347574230116
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 31073.990151093007,
+        "sba_croston": 15338.102199363824,
+        "tuned_s_s": 8836.321897643564,
+        "pooled_lightgbm": 7432.645263509587,
+        "monte_carlo_lookahead": 10129.574023173693
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 67.40175956187142,
+        "vs_sba": 33.95810060781943,
+        "vs_tuned_s_s": -14.635638453540366,
+        "vs_pooled_lightgbm": -36.284911549655405
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 178,
+        "vs_sba": 181,
+        "vs_tuned_s_s": 88,
+        "vs_pooled_lightgbm": 47
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 2.036158975252268e-07,
+          "bootstrap_95ci_pct_change": [
+            56.89717367291691,
+            74.07889209000204
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.0005084758713598375,
+          "bootstrap_95ci_pct_change": [
+            22.144419090930384,
+            43.06063008335315
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 5.392264354598215e-13,
+          "bootstrap_95ci_pct_change": [
+            -35.95288007794726,
+            1.740951194367083
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.6148008952173523e-27,
+          "bootstrap_95ci_pct_change": [
+            -66.19389404867118,
+            -13.406996103812737
+          ]
+        }
+      ],
+      "runtime_seconds": 174.6891851425171,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 40041.00435683597,
+        "sba_croston": 14423.613995729154,
+        "tuned_s_s": 8753.967524219028,
+        "pooled_lightgbm": 6295.598020816962,
+        "monte_carlo_lookahead": 10966.683344073746
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 72.61136797083995,
+        "vs_sba": 23.96716005211321,
+        "vs_tuned_s_s": -25.276719541544356,
+        "vs_pooled_lightgbm": -74.19605425586926
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 165,
+        "vs_sba": 178,
+        "vs_tuned_s_s": 75,
+        "vs_pooled_lightgbm": 26
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.9204221340933735e-05,
+          "bootstrap_95ci_pct_change": [
+            58.24214889988321,
+            80.63086794534168
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.0015003667472751063,
+          "bootstrap_95ci_pct_change": [
+            11.916123858026085,
+            33.076266238032396
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 4.7572995350776676e-17,
+          "bootstrap_95ci_pct_change": [
+            -46.04275788444497,
+            -10.312848670218525
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 7.879328109430137e-40,
+          "bootstrap_95ci_pct_change": [
+            -125.24666065055366,
+            -41.146742187417914
+          ]
+        }
+      ],
+      "runtime_seconds": 169.18320298194885,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 32464.395397000495,
+        "sba_croston": 15642.70800587071,
+        "tuned_s_s": 8861.895287840376,
+        "pooled_lightgbm": 8054.225967379056,
+        "monte_carlo_lookahead": 10717.13655890712
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 66.98802972348804,
+        "vs_sba": 31.487971552719795,
+        "vs_tuned_s_s": -20.935039410952694,
+        "vs_pooled_lightgbm": -33.06227814209946
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 170,
+        "vs_sba": 174,
+        "vs_tuned_s_s": 82,
+        "vs_pooled_lightgbm": 49
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.376661723035607e-05,
+          "bootstrap_95ci_pct_change": [
+            57.99190169779396,
+            73.58865728576987
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.0036451046733504758,
+          "bootstrap_95ci_pct_change": [
+            19.109674122741566,
+            41.92821439475585
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.4098042265999657e-16,
+          "bootstrap_95ci_pct_change": [
+            -38.194942039254016,
+            -6.337683731138081
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 4.7559168160162164e-30,
+          "bootstrap_95ci_pct_change": [
+            -79.94824868447358,
+            3.077394837712358
+          ]
+        }
+      ],
+      "runtime_seconds": 129.48418712615967,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 30125.431363333144,
+        "sba_croston": 14387.303241291884,
+        "tuned_s_s": 8811.079391040745,
+        "pooled_lightgbm": 6412.242087664842,
+        "monte_carlo_lookahead": 10803.625241520753
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 64.13785711075238,
+        "vs_sba": 24.908615184295936,
+        "vs_tuned_s_s": -22.614094846382415,
+        "vs_pooled_lightgbm": -68.4843630951421
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 161,
+        "vs_sba": 173,
+        "vs_tuned_s_s": 72,
+        "vs_pooled_lightgbm": 28
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 0.00014584569623184482,
+          "bootstrap_95ci_pct_change": [
+            54.17393548900092,
+            70.9831478106755
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.007314987647319567,
+          "bootstrap_95ci_pct_change": [
+            13.092327114142748,
+            33.23329189549685
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.5507902040640283e-20,
+          "bootstrap_95ci_pct_change": [
+            -50.553302071443056,
+            -2.692231067976758
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 7.097869861725162e-39,
+          "bootstrap_95ci_pct_change": [
+            -103.42124733097816,
+            -39.707488648428665
+          ]
+        }
+      ],
+      "runtime_seconds": 127.54283499717712,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 38988.78210906149,
+        "sba_croston": 16827.589890389612,
+        "tuned_s_s": 9390.377621576652,
+        "pooled_lightgbm": 7370.8107179569015,
+        "monte_carlo_lookahead": 9724.35461351784
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 75.0585832963021,
+        "vs_sba": 42.211839741402855,
+        "vs_tuned_s_s": -3.556587449409876,
+        "vs_pooled_lightgbm": -31.930597401276263
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 184,
+        "vs_sba": 189,
+        "vs_tuned_s_s": 96,
+        "vs_pooled_lightgbm": 44
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.7347505018766377e-09,
+          "bootstrap_95ci_pct_change": [
+            67.71311028415353,
+            80.12543700069789
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.3791462082144425e-06,
+          "bootstrap_95ci_pct_change": [
+            31.77771065665378,
+            50.03958332133721
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 5.736085724555587e-10,
+          "bootstrap_95ci_pct_change": [
+            -24.765157732597416,
+            12.800800285065664
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.4070105388679796e-31,
+          "bootstrap_95ci_pct_change": [
+            -64.50472027362318,
+            -8.669938709954296
+          ]
+        }
+      ],
+      "runtime_seconds": 125.80807614326477,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 32877.23020753682,
+        "sba_croston": 13879.383834172972,
+        "tuned_s_s": 7313.081358257217,
+        "pooled_lightgbm": 6286.317727159324,
+        "monte_carlo_lookahead": 9456.188263700584
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 71.23788042968158,
+        "vs_sba": 31.868817977220754,
+        "vs_tuned_s_s": -29.305115045979612,
+        "vs_pooled_lightgbm": -50.42491764051622
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 176,
+        "vs_sba": 181,
+        "vs_tuned_s_s": 88,
+        "vs_pooled_lightgbm": 26
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 2.808643850640052e-07,
+          "bootstrap_95ci_pct_change": [
+            59.80927623766547,
+            78.94851274380085
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.840646750187905e-05,
+          "bootstrap_95ci_pct_change": [
+            22.21553197323319,
+            39.40288425861095
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 2.2069740041265043e-15,
+          "bootstrap_95ci_pct_change": [
+            -44.44128720394486,
+            -16.327273647737222
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 7.612121981826717e-39,
+          "bootstrap_95ci_pct_change": [
+            -104.50377409279552,
+            -7.845761053867612
+          ]
+        }
+      ],
+      "runtime_seconds": 127.78608202934265,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.5,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 53206.36605117846,
+        "sba_croston": 14191.041453897737,
+        "tuned_s_s": 8766.410846417206,
+        "pooled_lightgbm": 5457.354967957617,
+        "monte_carlo_lookahead": 9767.037526157483
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 81.64310353997357,
+        "vs_sba": 31.174624794892335,
+        "vs_tuned_s_s": -11.414325626196597,
+        "vs_pooled_lightgbm": -78.97017114524876
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 176,
+        "vs_sba": 177,
+        "vs_tuned_s_s": 84,
+        "vs_pooled_lightgbm": 25
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.375722653724123e-07,
+          "bootstrap_95ci_pct_change": [
+            63.754080557077906,
+            89.64981965251351
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.0009639633760048374,
+          "bootstrap_95ci_pct_change": [
+            21.76954705095452,
+            38.80333199457767
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 9.889131789005307e-15,
+          "bootstrap_95ci_pct_change": [
+            -35.4850140474763,
+            6.200619228536958
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 9.14987614260504e-40,
+          "bootstrap_95ci_pct_change": [
+            -110.3755686566839,
+            -50.12764974370117
+          ]
+        }
+      ],
+      "runtime_seconds": 166.42952871322632,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 0,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 62067.63014293536,
+        "sba_croston": 21051.875444469646,
+        "tuned_s_s": 12826.938612299784,
+        "pooled_lightgbm": 6198.680214762344,
+        "monte_carlo_lookahead": 11313.11755758481
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 81.77291845760526,
+        "vs_sba": 46.26076148214728,
+        "vs_tuned_s_s": 11.801888981236463,
+        "vs_pooled_lightgbm": -82.50848834954058
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 190,
+        "vs_sba": 206,
+        "vs_tuned_s_s": 105,
+        "vs_pooled_lightgbm": 28
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 5.762471016465382e-13,
+          "bootstrap_95ci_pct_change": [
+            74.4340769007204,
+            86.26989744029277
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 8.023439208265875e-12,
+          "bootstrap_95ci_pct_change": [
+            34.24461439321123,
+            55.45237877527708
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 5.667318803237815e-07,
+          "bootstrap_95ci_pct_change": [
+            -14.626963718073862,
+            31.714971367907648
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 8.802949296433902e-36,
+          "bootstrap_95ci_pct_change": [
+            -121.47125186689411,
+            -54.108762770975375
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 46017.26038843206,
+        "sba_croston": 22317.355767954392,
+        "tuned_s_s": 12018.948143099904,
+        "pooled_lightgbm": 8930.322457545099,
+        "monte_carlo_lookahead": 11039.895636252633
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 76.00922883486591,
+        "vs_sba": 50.53224158345462,
+        "vs_tuned_s_s": 8.145908403884295,
+        "vs_pooled_lightgbm": -23.622586852115155
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 205,
+        "vs_sba": 222,
+        "vs_tuned_s_s": 122,
+        "vs_pooled_lightgbm": 54
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.066433780814488e-14,
+          "bootstrap_95ci_pct_change": [
+            67.92649390954004,
+            81.0724963244816
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.6018530115272294e-15,
+          "bootstrap_95ci_pct_change": [
+            40.75862511969111,
+            58.04433915482477
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.0028086433344197354,
+          "bootstrap_95ci_pct_change": [
+            -11.55341986970712,
+            23.07143957949857
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.470473771476681e-24,
+          "bootstrap_95ci_pct_change": [
+            -60.185907852968946,
+            1.6436005081595118
+          ]
+        }
+      ],
+      "runtime_seconds": 169.71164798736572,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 59480.98638179677,
+        "sba_croston": 21011.727980882275,
+        "tuned_s_s": 11821.656426232086,
+        "pooled_lightgbm": 7741.919812193476,
+        "monte_carlo_lookahead": 12401.912723253095
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 79.14978638106696,
+        "vs_sba": 40.97623605951354,
+        "vs_tuned_s_s": -4.908417873940474,
+        "vs_pooled_lightgbm": -60.191696944731454
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 193,
+        "vs_sba": 220,
+        "vs_tuned_s_s": 112,
+        "vs_pooled_lightgbm": 32
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.8134482692093645e-11,
+          "bootstrap_95ci_pct_change": [
+            67.93163342711658,
+            85.58441208854565
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.5820053583510474e-14,
+          "bootstrap_95ci_pct_change": [
+            31.044081841782827,
+            49.06791520317771
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.482428031024769e-05,
+          "bootstrap_95ci_pct_change": [
+            -23.177403185177333,
+            7.754785459934786
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.596356684182225e-39,
+          "bootstrap_95ci_pct_change": [
+            -116.60653134121854,
+            -26.60198791674809
+          ]
+        }
+      ],
+      "runtime_seconds": 166.54475283622742,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 48122.71719663423,
+        "sba_croston": 22832.98758748469,
+        "tuned_s_s": 12023.264884079515,
+        "pooled_lightgbm": 9377.006596265084,
+        "monte_carlo_lookahead": 11579.717965227774
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 75.93710696361578,
+        "vs_sba": 49.285138789393926,
+        "vs_tuned_s_s": 3.689072170730101,
+        "vs_pooled_lightgbm": -23.49056008812067
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 195,
+        "vs_sba": 218,
+        "vs_tuned_s_s": 120,
+        "vs_pooled_lightgbm": 51
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 2.208345293158991e-12,
+          "bootstrap_95ci_pct_change": [
+            69.20600000592864,
+            80.8868173012569
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 4.759059550728586e-15,
+          "bootstrap_95ci_pct_change": [
+            39.40130810399233,
+            57.63266563671833
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.0006061615412212934,
+          "bootstrap_95ci_pct_change": [
+            -11.681935093008098,
+            16.64850590998767
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.68333673905922e-27,
+          "bootstrap_95ci_pct_change": [
+            -74.24161705855225,
+            14.413168385338604
+          ]
+        }
+      ],
+      "runtime_seconds": 171.1246612071991,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 44648.42859027305,
+        "sba_croston": 20996.88645048543,
+        "tuned_s_s": 11997.315773475799,
+        "pooled_lightgbm": 8424.906210263174,
+        "monte_carlo_lookahead": 12323.552530692763
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 72.39868698676322,
+        "vs_sba": 41.30771455208849,
+        "vs_tuned_s_s": -2.719247899919597,
+        "vs_pooled_lightgbm": -46.275248924199055
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 187,
+        "vs_sba": 217,
+        "vs_tuned_s_s": 106,
+        "vs_pooled_lightgbm": 42
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 2.981379197654522e-09,
+          "bootstrap_95ci_pct_change": [
+            64.60650933662366,
+            77.72415103993791
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.2740263653637198e-12,
+          "bootstrap_95ci_pct_change": [
+            31.80876625894156,
+            48.674566082650635
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 7.147671477953455e-08,
+          "bootstrap_95ci_pct_change": [
+            -27.057460245260668,
+            13.233999291052315
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.2247977838726344e-32,
+          "bootstrap_95ci_pct_change": [
+            -81.46277264420497,
+            -17.98951274515866
+          ]
+        }
+      ],
+      "runtime_seconds": 160.7825849056244,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 57935.591524859025,
+        "sba_croston": 24573.95620847155,
+        "tuned_s_s": 12728.797392597753,
+        "pooled_lightgbm": 9028.070179000366,
+        "monte_carlo_lookahead": 10457.164996277503
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 81.9503612183013,
+        "vs_sba": 57.44614783405315,
+        "vs_tuned_s_s": 17.846402344665215,
+        "vs_pooled_lightgbm": -15.829460659280926
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 213,
+        "vs_sba": 239,
+        "vs_tuned_s_s": 131,
+        "vs_pooled_lightgbm": 56
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 5.928864699609516e-18,
+          "bootstrap_95ci_pct_change": [
+            76.29567778035278,
+            85.8224358816608
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 4.660407444982473e-21,
+          "bootstrap_95ci_pct_change": [
+            49.0157763160117,
+            63.60755271440682
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.11604285399147873,
+          "bootstrap_95ci_pct_change": [
+            -1.3291927587958174,
+            32.18562425186538
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.5264033350632767e-26,
+          "bootstrap_95ci_pct_change": [
+            -51.25442611736785,
+            8.429681645462713
+          ]
+        }
+      ],
+      "runtime_seconds": 162.00160884857178,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 48731.5439383802,
+        "sba_croston": 20201.21547593277,
+        "tuned_s_s": 9879.82850387874,
+        "pooled_lightgbm": 7872.462997119731,
+        "monte_carlo_lookahead": 10133.967914511775
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 79.20450062627624,
+        "vs_sba": 49.834860547945084,
+        "vs_tuned_s_s": -2.5723058910715135,
+        "vs_pooled_lightgbm": -28.72677735315432
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 202,
+        "vs_sba": 224,
+        "vs_tuned_s_s": 125,
+        "vs_pooled_lightgbm": 34
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.4120796171327851e-14,
+          "bootstrap_95ci_pct_change": [
+            70.62865578144951,
+            84.83885398785188
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 4.2574354161547384e-17,
+          "bootstrap_95ci_pct_change": [
+            41.942639830478576,
+            55.960152457574154
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.0007383854311143546,
+          "bootstrap_95ci_pct_change": [
+            -15.826225094900687,
+            8.502671593677276
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 6.490869963862227e-35,
+          "bootstrap_95ci_pct_change": [
+            -88.50059514904949,
+            13.040391610966632
+          ]
+        }
+      ],
+      "runtime_seconds": 162.5591061115265,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 0.75,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 79258.99782466974,
+        "sba_croston": 20666.118193303162,
+        "tuned_s_s": 11953.610620281423,
+        "pooled_lightgbm": 6433.856983606908,
+        "monte_carlo_lookahead": 10492.105679340133
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 86.7622529084333,
+        "vs_sba": 49.23039933672647,
+        "vs_tuned_s_s": 12.226472714960169,
+        "vs_pooled_lightgbm": -63.07645174695995
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 198,
+        "vs_sba": 218,
+        "vs_tuned_s_s": 116,
+        "vs_pooled_lightgbm": 37
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.3989286144327478e-14,
+          "bootstrap_95ci_pct_change": [
+            73.48567664986584,
+            92.60316945485633
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 7.096527500903082e-15,
+          "bootstrap_95ci_pct_change": [
+            41.89773360710092,
+            54.94841961188813
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.00017186061482979862,
+          "bootstrap_95ci_pct_change": [
+            -8.371008703692912,
+            27.01398358851707
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 8.269572739509228e-34,
+          "bootstrap_95ci_pct_change": [
+            -95.81273383788226,
+            -32.416459042130626
+          ]
+        }
+      ],
+      "runtime_seconds": 160.18677306175232,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 0,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 163848.3335658902,
+        "sba_croston": 54224.46155328494,
+        "tuned_s_s": 30371.919323640985,
+        "pooled_lightgbm": 10568.154039162093,
+        "monte_carlo_lookahead": 17178.899909297812
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 89.51536488932952,
+        "vs_sba": 68.31891102797478,
+        "vs_tuned_s_s": 43.43821433791953,
+        "vs_pooled_lightgbm": -62.55345868009186
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 227,
+        "vs_sba": 258,
+        "vs_tuned_s_s": 177,
+        "vs_pooled_lightgbm": 43
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 5.384508967493802e-25,
+          "bootstrap_95ci_pct_change": [
+            85.19447872271441,
+            92.20802373623351
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 5.598495802183588e-30,
+          "bootstrap_95ci_pct_change": [
+            60.11108104998332,
+            73.86512832982226
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.00040334934570482116,
+          "bootstrap_95ci_pct_change": [
+            23.854628452659583,
+            56.83154029086536
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 5.2141412258726645e-27,
+          "bootstrap_95ci_pct_change": [
+            -121.88942603919205,
+            -25.570813446193934
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 120733.61157512738,
+        "sba_croston": 57213.62361090723,
+        "tuned_s_s": 27538.0635055545,
+        "pooled_lightgbm": 15631.11851010235,
+        "monte_carlo_lookahead": 15167.000652033763
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 87.43763194510588,
+        "vs_sba": 73.49057847623844,
+        "vs_tuned_s_s": 44.923503248605186,
+        "vs_pooled_lightgbm": 2.9691916017950293
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 247,
+        "vs_sba": 275,
+        "vs_tuned_s_s": 204,
+        "vs_pooled_lightgbm": 111
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.8655886008133596e-29,
+          "bootstrap_95ci_pct_change": [
+            82.61371668290536,
+            90.46277689587943
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.267958253560459e-33,
+          "bootstrap_95ci_pct_change": [
+            66.21609721648828,
+            78.50785254950718
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.7492639827309504e-08,
+          "bootstrap_95ci_pct_change": [
+            29.512060428223847,
+            56.01489892634721
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.3549787787786212e-08,
+          "bootstrap_95ci_pct_change": [
+            -39.1848056689259,
+            30.259827793392105
+          ]
+        }
+      ],
+      "runtime_seconds": 155.09114503860474,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 156680.8965066008,
+        "sba_croston": 53952.29790664788,
+        "tuned_s_s": 26954.108405225066,
+        "pooled_lightgbm": 13112.154462300929,
+        "monte_carlo_lookahead": 19054.410796956607
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 87.83871472413112,
+        "vs_sba": 64.68285589999168,
+        "vs_tuned_s_s": 29.307953687450105,
+        "vs_pooled_lightgbm": -45.31868772397705
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 232,
+        "vs_sba": 271,
+        "vs_tuned_s_s": 193,
+        "vs_pooled_lightgbm": 47
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.8219258817635434e-25,
+          "bootstrap_95ci_pct_change": [
+            80.04555995842392,
+            92.31981501409163
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.661034099455031e-32,
+          "bootstrap_95ci_pct_change": [
+            55.699730903904985,
+            72.1898521262248
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 4.817553542374472e-06,
+          "bootstrap_95ci_pct_change": [
+            16.270918755808815,
+            40.191445665248736
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.2583056187475883e-31,
+          "bootstrap_95ci_pct_change": [
+            -132.68725094200306,
+            -3.482908304949864
+          ]
+        }
+      ],
+      "runtime_seconds": 149.61024165153503,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 126414.32619480291,
+        "sba_croston": 58784.3854955546,
+        "tuned_s_s": 27799.38455538766,
+        "pooled_lightgbm": 17557.989879383145,
+        "monte_carlo_lookahead": 15526.287225189097
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 87.71793696763191,
+        "vs_sba": 73.58773576639118,
+        "vs_tuned_s_s": 44.14880950240308,
+        "vs_pooled_lightgbm": 11.57138526762511
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 236,
+        "vs_sba": 270,
+        "vs_tuned_s_s": 200,
+        "vs_pooled_lightgbm": 74
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 2.796260727049351e-26,
+          "bootstrap_95ci_pct_change": [
+            83.7336601331704,
+            90.71142217965573
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 9.018936309121948e-34,
+          "bootstrap_95ci_pct_change": [
+            66.97600923662908,
+            79.03057225662731
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 9.367555461122902e-09,
+          "bootstrap_95ci_pct_change": [
+            33.140447761606886,
+            53.361383525794174
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.89216227567447e-16,
+          "bootstrap_95ci_pct_change": [
+            -51.64885929051795,
+            46.60712894726073
+          ]
+        }
+      ],
+      "runtime_seconds": 158.4592800140381,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 117263.41472497262,
+        "sba_croston": 54044.802496453165,
+        "tuned_s_s": 27844.28937415421,
+        "pooled_lightgbm": 13094.698241817294,
+        "monte_carlo_lookahead": 19277.465898040828
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 83.56054533866865,
+        "vs_sba": 64.33058313182667,
+        "vs_tuned_s_s": 30.76689572140896,
+        "vs_pooled_lightgbm": -47.215808581820994
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 221,
+        "vs_sba": 263,
+        "vs_tuned_s_s": 182,
+        "vs_pooled_lightgbm": 61
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.069809197149551e-21,
+          "bootstrap_95ci_pct_change": [
+            78.47411723615977,
+            87.59309242060917
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.0456840338848445e-29,
+          "bootstrap_95ci_pct_change": [
+            55.94754411217054,
+            72.41544044450772
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.0006555889730924339,
+          "bootstrap_95ci_pct_change": [
+            14.507190775363407,
+            41.768953032052785
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 6.7579155950203665e-21,
+          "bootstrap_95ci_pct_change": [
+            -130.2706179055155,
+            4.876614950293726
+          ]
+        }
+      ],
+      "runtime_seconds": 157.42319893836975,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 152669.63860384666,
+        "sba_croston": 63305.78779888124,
+        "tuned_s_s": 29721.787929715985,
+        "pooled_lightgbm": 16530.964143802972,
+        "monte_carlo_lookahead": 13741.416613185169
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 90.99924730362272,
+        "vs_sba": 78.29358564047754,
+        "vs_tuned_s_s": 53.7665208914083,
+        "vs_pooled_lightgbm": 16.874681393967773
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 255,
+        "vs_sba": 277,
+        "vs_tuned_s_s": 208,
+        "vs_pooled_lightgbm": 73
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.4356096338062116e-33,
+          "bootstrap_95ci_pct_change": [
+            87.53674396559269,
+            93.25370965271378
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.616897540104293e-37,
+          "bootstrap_95ci_pct_change": [
+            72.05277206861044,
+            82.66473019565154
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 6.174423165158343e-11,
+          "bootstrap_95ci_pct_change": [
+            38.60642111337931,
+            64.3479672246058
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.8336832350950862e-18,
+          "bootstrap_95ci_pct_change": [
+            -28.1684773268824,
+            41.44816351295494
+          ]
+        }
+      ],
+      "runtime_seconds": 96.60785722732544,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 128003.1125925971,
+        "sba_croston": 51810.37368473178,
+        "tuned_s_s": 22397.403227164745,
+        "pooled_lightgbm": 12766.845497512797,
+        "monte_carlo_lookahead": 13265.401687984182
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 89.63665693801936,
+        "vs_sba": 74.39624394777638,
+        "vs_tuned_s_s": 40.7725906729437,
+        "vs_pooled_lightgbm": -3.905085172124245
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 234,
+        "vs_sba": 275,
+        "vs_tuned_s_s": 199,
+        "vs_pooled_lightgbm": 65
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.1346674249648295e-29,
+          "bootstrap_95ci_pct_change": [
+            85.01777847117215,
+            92.78437445987359
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 6.563298942667568e-38,
+          "bootstrap_95ci_pct_change": [
+            68.60467812495395,
+            78.74766379819303
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.6903915311169316e-09,
+          "bootstrap_95ci_pct_change": [
+            30.4506706753496,
+            49.10827586693708
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 7.617658843435012e-20,
+          "bootstrap_95ci_pct_change": [
+            -76.47930467167348,
+            35.7996116564246
+          ]
+        }
+      ],
+      "runtime_seconds": 98.57207679748535,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "holding_rate": 0.2,
+      "stockout_multiplier": 2.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 209522.1566921262,
+        "sba_croston": 53041.5018903303,
+        "tuned_s_s": 28071.965320190597,
+        "pooled_lightgbm": 10250.465443371395,
+        "monte_carlo_lookahead": 13805.771516574478
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 93.41082979741336,
+        "vs_sba": 73.97175603149478,
+        "vs_tuned_s_s": 50.820074907100434,
+        "vs_pooled_lightgbm": -34.68433792440293
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 244,
+        "vs_sba": 265,
+        "vs_tuned_s_s": 193,
+        "vs_pooled_lightgbm": 69
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.680572391179772e-31,
+          "bootstrap_95ci_pct_change": [
+            86.39371034498053,
+            96.50420234379624
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.68042375361432e-35,
+          "bootstrap_95ci_pct_change": [
+            68.63946473992628,
+            78.08768443674569
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.3133679624807073e-08,
+          "bootstrap_95ci_pct_change": [
+            36.81359735319186,
+            61.03899318582809
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.0477291848874339e-23,
+          "bootstrap_95ci_pct_change": [
+            -83.49301480158731,
+            2.23359321520983
+          ]
+        }
+      ],
+      "runtime_seconds": 91.11810088157654,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 0,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 82173.96880523572,
+        "sba_croston": 27399.31172143759,
+        "tuned_s_s": 15923.332266017445,
+        "pooled_lightgbm": 6081.708330136475,
+        "monte_carlo_lookahead": 10568.806647344003
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 87.13849799272369,
+        "vs_sba": 61.42674401899364,
+        "vs_tuned_s_s": 33.62691633396816,
+        "vs_pooled_lightgbm": -73.78022873890167
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 217,
+        "vs_sba": 243,
+        "vs_tuned_s_s": 145,
+        "vs_pooled_lightgbm": 39
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.2614666435189343e-20,
+          "bootstrap_95ci_pct_change": [
+            81.8995234155982,
+            90.36490120811774
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 7.956473557848771e-25,
+          "bootstrap_95ci_pct_change": [
+            52.00294799416547,
+            67.92055517987481
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.6451874485898684,
+          "bootstrap_95ci_pct_change": [
+            11.716179039058675,
+            48.90984583731789
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 5.303775260471215e-28,
+          "bootstrap_95ci_pct_change": [
+            -121.51963387536982,
+            -41.58398574420896
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 60663.668206667404,
+        "sba_croston": 28951.710570999287,
+        "tuned_s_s": 14365.27296464852,
+        "pooled_lightgbm": 8956.656935469895,
+        "monte_carlo_lookahead": 9808.602989194533
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 83.83117394784166,
+        "vs_sba": 66.12081705797468,
+        "vs_tuned_s_s": 31.720037528472243,
+        "vs_pooled_lightgbm": -9.51187546718224
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 232,
+        "vs_sba": 260,
+        "vs_tuned_s_s": 169,
+        "vs_pooled_lightgbm": 73
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 9.290767379596009e-24,
+          "bootstrap_95ci_pct_change": [
+            77.79307752787587,
+            87.55780462516032
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.1638202670365036e-28,
+          "bootstrap_95ci_pct_change": [
+            58.062871152836934,
+            71.88423241287917
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.015012720097142869,
+          "bootstrap_95ci_pct_change": [
+            14.578298843907506,
+            44.157689032270625
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.4884262224547104e-16,
+          "bootstrap_95ci_pct_change": [
+            -46.00440684559773,
+            16.49427228546884
+          ]
+        }
+      ],
+      "runtime_seconds": 96.95988297462463,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 78630.70833002898,
+        "sba_croston": 27287.995459679667,
+        "tuned_s_s": 14247.396153621074,
+        "pooled_lightgbm": 7808.743930439379,
+        "monte_carlo_lookahead": 11581.409197497356
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 85.27113713781156,
+        "vs_sba": 57.55859306481537,
+        "vs_tuned_s_s": 18.71209958211303,
+        "vs_pooled_lightgbm": -48.313343357972016
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 218,
+        "vs_sba": 255,
+        "vs_tuned_s_s": 175,
+        "vs_pooled_lightgbm": 37
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 5.7790282987239175e-21,
+          "bootstrap_95ci_pct_change": [
+            76.45711993027331,
+            90.28194960113679
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.6660375735492863e-27,
+          "bootstrap_95ci_pct_change": [
+            48.593785126429964,
+            64.85182453354825
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.04600816644499725,
+          "bootstrap_95ci_pct_change": [
+            4.3692109933902,
+            29.837866968547605
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 7.985656563124158e-32,
+          "bootstrap_95ci_pct_change": [
+            -123.6753413660374,
+            -9.178750762313404
+          ]
+        }
+      ],
+      "runtime_seconds": 81.90046906471252,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 63494.10104683471,
+        "sba_croston": 29707.729958437987,
+        "tuned_s_s": 14478.417498942492,
+        "pooled_lightgbm": 10292.890379679047,
+        "monte_carlo_lookahead": 10145.968350234587
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 84.02061265069224,
+        "vs_sba": 65.84737923621528,
+        "vs_tuned_s_s": 29.92349922927936,
+        "vs_pooled_lightgbm": 1.4274127482648002
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 219,
+        "vs_sba": 261,
+        "vs_tuned_s_s": 170,
+        "vs_pooled_lightgbm": 61
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.4889217144613737e-21,
+          "bootstrap_95ci_pct_change": [
+            79.06723001384,
+            87.6607719943437
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 7.916172345274132e-29,
+          "bootstrap_95ci_pct_change": [
+            58.320035610728475,
+            72.16261212095291
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.007850119813833194,
+          "bootstrap_95ci_pct_change": [
+            17.615911561986046,
+            40.49254515838126
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.8388690296382036e-21,
+          "bootstrap_95ci_pct_change": [
+            -60.52125601928354,
+            39.58005518174788
+          ]
+        }
+      ],
+      "runtime_seconds": 90.22816014289856,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 58901.56658984964,
+        "sba_croston": 27314.435453952778,
+        "tuned_s_s": 14462.235395866057,
+        "pooled_lightgbm": 7900.3462377449705,
+        "monte_carlo_lookahead": 11587.733246648233
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 80.32695237575376,
+        "vs_sba": 57.57652298476727,
+        "vs_tuned_s_s": 19.875918698152873,
+        "vs_pooled_lightgbm": -46.673739326591445
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 211,
+        "vs_sba": 253,
+        "vs_tuned_s_s": 154,
+        "vs_pooled_lightgbm": 44
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 2.0087051054050792e-17,
+          "bootstrap_95ci_pct_change": [
+            74.61808552367853,
+            84.62225122901044
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.5103540493194947e-25,
+          "bootstrap_95ci_pct_change": [
+            49.30018513886629,
+            65.2308641772854
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.7062478794644412,
+          "bootstrap_95ci_pct_change": [
+            1.2161334674947641,
+            31.985584188650847
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 8.016620517173717e-27,
+          "bootstrap_95ci_pct_change": [
+            -101.12771610405684,
+            -5.674826498743959
+          ]
+        }
+      ],
+      "runtime_seconds": 88.27156281471252,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 76608.61012128994,
+        "sba_croston": 31986.608212997053,
+        "tuned_s_s": 15563.003252167015,
+        "pooled_lightgbm": 9019.087739112878,
+        "monte_carlo_lookahead": 8947.295428570156
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 88.32077045334144,
+        "vs_sba": 72.02799568809981,
+        "vs_tuned_s_s": 42.509197719763236,
+        "vs_pooled_lightgbm": 0.7960041261310891
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 241,
+        "vs_sba": 270,
+        "vs_tuned_s_s": 186,
+        "vs_pooled_lightgbm": 57
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.281017295766917e-28,
+          "bootstrap_95ci_pct_change": [
+            84.33346175474101,
+            91.07271703183918
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.4874293672750155e-33,
+          "bootstrap_95ci_pct_change": [
+            65.18212441596066,
+            76.87009948887668
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 2.7852893239163462e-05,
+          "bootstrap_95ci_pct_change": [
+            26.34532192875482,
+            54.219109229641646
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.451756077462406e-24,
+          "bootstrap_95ci_pct_change": [
+            -39.64463706200679,
+            25.49659757845314
+          ]
+        }
+      ],
+      "runtime_seconds": 85.22803711891174,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 64293.70698276106,
+        "sba_croston": 26214.116980029226,
+        "tuned_s_s": 11727.69021766356,
+        "pooled_lightgbm": 8210.248843244213,
+        "monte_carlo_lookahead": 8691.27283424557
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 86.48192297175221,
+        "vs_sba": 66.84506733197664,
+        "vs_tuned_s_s": 25.891009457639967,
+        "vs_pooled_lightgbm": -5.858823528804091
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 223,
+        "vs_sba": 264,
+        "vs_tuned_s_s": 167,
+        "vs_pooled_lightgbm": 52
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.7165743627592805e-24,
+          "bootstrap_95ci_pct_change": [
+            80.61303637203872,
+            90.40544630976285
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.202136677759566e-32,
+          "bootstrap_95ci_pct_change": [
+            60.572358413148386,
+            71.55447258748818
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.005868413624702302,
+          "bootstrap_95ci_pct_change": [
+            14.81695073772744,
+            34.978471732352375
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.778140877173929e-24,
+          "bootstrap_95ci_pct_change": [
+            -74.23364775400378,
+            34.908962440147086
+          ]
+        }
+      ],
+      "runtime_seconds": 71.96169018745422,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "holding_rate",
+      "value": 0.15,
+      "holding_rate": 0.15,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 105036.35397211208,
+        "sba_croston": 26830.972938936873,
+        "tuned_s_s": 14630.347900963066,
+        "pooled_lightgbm": 6088.983154598887,
+        "monte_carlo_lookahead": 9034.238394225997
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 91.39894136403035,
+        "vs_sba": 66.32906896523461,
+        "vs_tuned_s_s": 38.25000980577295,
+        "vs_pooled_lightgbm": -48.37023136453609
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 225,
+        "vs_sba": 254,
+        "vs_tuned_s_s": 169,
+        "vs_pooled_lightgbm": 37
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.0998829421827948e-25,
+          "bootstrap_95ci_pct_change": [
+            82.4179845889012,
+            95.3165508743099
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 5.195354350780696e-30,
+          "bootstrap_95ci_pct_change": [
+            60.75038052445738,
+            70.77493848050315
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.011449643302659764,
+          "bootstrap_95ci_pct_change": [
+            22.351017748286672,
+            49.58590505287403
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.7641817054080564e-31,
+          "bootstrap_95ci_pct_change": [
+            -93.64593541120128,
+            -10.758995923526733
+          ]
+        }
+      ],
+      "runtime_seconds": 80.49866223335266,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 0,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 82673.57284981695,
+        "sba_croston": 27973.473611027825,
+        "tuned_s_s": 16925.205495298622,
+        "pooled_lightgbm": 8268.032385050603,
+        "monte_carlo_lookahead": 14504.32184241049
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 82.4559150615654,
+        "vs_sba": 48.149729118043695,
+        "vs_tuned_s_s": 14.303422511239749,
+        "vs_pooled_lightgbm": -75.42652431593879
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 191,
+        "vs_sba": 210,
+        "vs_tuned_s_s": 108,
+        "vs_pooled_lightgbm": 33
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 6.25353221299367e-14,
+          "bootstrap_95ci_pct_change": [
+            75.40269772345484,
+            86.80600903048234
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.710098576005463e-13,
+          "bootstrap_95ci_pct_change": [
+            36.45685046069802,
+            56.9184336620453
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.0789078992575037e-05,
+          "bootstrap_95ci_pct_change": [
+            -11.654707394760353,
+            33.574764211128276
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.5270669633888172e-33,
+          "bootstrap_95ci_pct_change": [
+            -114.69376463256599,
+            -46.44679113327201
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 61257.39304487484,
+        "sba_croston": 29641.508102090633,
+        "tuned_s_s": 15838.04521953639,
+        "pooled_lightgbm": 11716.347773545549,
+        "monte_carlo_lookahead": 14151.7446602133
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 76.8978992464693,
+        "vs_sba": 52.25700186551854,
+        "vs_tuned_s_s": 10.647150806483497,
+        "vs_pooled_lightgbm": -20.786314419299302
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 205,
+        "vs_sba": 224,
+        "vs_tuned_s_s": 128,
+        "vs_pooled_lightgbm": 53
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.8725749156729135e-15,
+          "bootstrap_95ci_pct_change": [
+            69.01859870072232,
+            81.76210711054567
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.1794327580136385e-17,
+          "bootstrap_95ci_pct_change": [
+            42.45110149138289,
+            59.48474747259097
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.015335051578149034,
+          "bootstrap_95ci_pct_change": [
+            -8.500104874152738,
+            25.313461381193363
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.218779722377774e-22,
+          "bootstrap_95ci_pct_change": [
+            -57.39962822869676,
+            4.296558028397391
+          ]
+        }
+      ],
+      "runtime_seconds": 89.48995685577393,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 79211.22848348616,
+        "sba_croston": 27911.688472391124,
+        "tuned_s_s": 15657.248381964568,
+        "pooled_lightgbm": 10154.096035562452,
+        "monte_carlo_lookahead": 15885.301860934731
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 79.94564386254093,
+        "vs_sba": 43.087277300878114,
+        "vs_tuned_s_s": -1.4565361256761777,
+        "vs_pooled_lightgbm": -56.442304714275025
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 197,
+        "vs_sba": 223,
+        "vs_tuned_s_s": 120,
+        "vs_pooled_lightgbm": 28
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.376841906320904e-12,
+          "bootstrap_95ci_pct_change": [
+            69.13890049688904,
+            86.15449409423249
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 5.478410589656606e-16,
+          "bootstrap_95ci_pct_change": [
+            33.34330135701948,
+            51.049263395006435
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.0005118572646150898,
+          "bootstrap_95ci_pct_change": [
+            -19.199153965374013,
+            10.993641812375289
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 7.592918155030606e-38,
+          "bootstrap_95ci_pct_change": [
+            -118.90123848726084,
+            -19.78962177437804
+          ]
+        }
+      ],
+      "runtime_seconds": 85.77846193313599,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 64067.97694570122,
+        "sba_croston": 30338.80437975936,
+        "tuned_s_s": 15883.631662059375,
+        "pooled_lightgbm": 12617.288483989476,
+        "monte_carlo_lookahead": 14724.472192211597
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 77.01742290896611,
+        "vs_sba": 51.46653767926637,
+        "vs_tuned_s_s": 7.297823914014689,
+        "vs_pooled_lightgbm": -16.700765072432166
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 200,
+        "vs_sba": 225,
+        "vs_tuned_s_s": 124,
+        "vs_pooled_lightgbm": 53
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.5715288294072025e-13,
+          "bootstrap_95ci_pct_change": [
+            70.60594939098712,
+            81.76294779300319
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 7.184880967904037e-17,
+          "bootstrap_95ci_pct_change": [
+            41.957334387333354,
+            59.55446629497118
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.006824984897077827,
+          "bootstrap_95ci_pct_change": [
+            -7.935281962149357,
+            20.089553798649746
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.0337591187333954e-25,
+          "bootstrap_95ci_pct_change": [
+            -68.00376011844583,
+            19.768955797407283
+          ]
+        }
+      ],
+      "runtime_seconds": 70.75199627876282,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 59441.285044576296,
+        "sba_croston": 27898.503865405175,
+        "tuned_s_s": 15839.363609596756,
+        "pooled_lightgbm": 9783.52648460933,
+        "monte_carlo_lookahead": 15759.019417743737
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 73.48809096922162,
+        "vs_sba": 43.51303032674342,
+        "vs_tuned_s_s": 0.5072438125250156,
+        "vs_pooled_lightgbm": -61.0770864936542
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 188,
+        "vs_sba": 222,
+        "vs_tuned_s_s": 113,
+        "vs_pooled_lightgbm": 36
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.0100397880319853e-10,
+          "bootstrap_95ci_pct_change": [
+            66.01272620981777,
+            78.672637289717
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.8367573964315354e-14,
+          "bootstrap_95ci_pct_change": [
+            34.18597133837584,
+            50.89564966573848
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 2.921161280996019e-06,
+          "bootstrap_95ci_pct_change": [
+            -22.816092562966485,
+            15.733324548738528
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.2938356468565773e-35,
+          "bootstrap_95ci_pct_change": [
+            -101.71618781068192,
+            -28.256499778234165
+          ]
+        }
+      ],
+      "runtime_seconds": 86.09431481361389,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 77156.19176002315,
+        "sba_croston": 32654.03684010992,
+        "tuned_s_s": 16773.13196479407,
+        "pooled_lightgbm": 11744.862428160428,
+        "monte_carlo_lookahead": 13325.241586631584
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 82.72952399196072,
+        "vs_sba": 59.19266689175839,
+        "vs_tuned_s_s": 20.556032024307846,
+        "vs_pooled_lightgbm": -13.455918859312588
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 220,
+        "vs_sba": 242,
+        "vs_tuned_s_s": 134,
+        "vs_pooled_lightgbm": 55
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.065741625723418e-19,
+          "bootstrap_95ci_pct_change": [
+            77.2383279342473,
+            86.48088791461822
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.7774131646736168e-22,
+          "bootstrap_95ci_pct_change": [
+            51.103082719820875,
+            65.1923241982547
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.27371341442691033,
+          "bootstrap_95ci_pct_change": [
+            1.6354283052370266,
+            34.62100936273391
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 6.12133436920785e-26,
+          "bootstrap_95ci_pct_change": [
+            -47.88791510710127,
+            9.038882914268212
+          ]
+        }
+      ],
+      "runtime_seconds": 88.79742288589478,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 64878.00835568611,
+        "sba_croston": 26831.977255355916,
+        "tuned_s_s": 12989.844799577559,
+        "pooled_lightgbm": 10113.643761672947,
+        "monte_carlo_lookahead": 12874.335397751584
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 80.15608721036944,
+        "vs_sba": 52.01868548400866,
+        "vs_tuned_s_s": 0.8892284981706022,
+        "vs_pooled_lightgbm": -27.29670632201482
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 204,
+        "vs_sba": 229,
+        "vs_tuned_s_s": 130,
+        "vs_pooled_lightgbm": 37
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.3809739053641182e-15,
+          "bootstrap_95ci_pct_change": [
+            71.87350070588717,
+            85.6067930971803
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 7.148382794942866e-19,
+          "bootstrap_95ci_pct_change": [
+            44.13001725284469,
+            57.95144599016396
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.005377753971333782,
+          "bootstrap_95ci_pct_change": [
+            -12.268659394714172,
+            12.096073940855922
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.9785441047797762e-33,
+          "bootstrap_95ci_pct_change": [
+            -88.39175485592484,
+            13.599603887527158
+          ]
+        }
+      ],
+      "runtime_seconds": 89.02687811851501,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "holding_rate",
+      "value": 0.25,
+      "holding_rate": 0.25,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 105586.90522421003,
+        "sba_croston": 27451.416926480313,
+        "tuned_s_s": 15788.466411910103,
+        "pooled_lightgbm": 8202.910481460493,
+        "monte_carlo_lookahead": 13338.22926547769
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 87.36753460369499,
+        "vs_sba": 51.41150891700856,
+        "vs_tuned_s_s": 15.519158621916985,
+        "vs_pooled_lightgbm": -62.6036185037445
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 202,
+        "vs_sba": 220,
+        "vs_tuned_s_s": 121,
+        "vs_pooled_lightgbm": 33
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 6.420956930965276e-16,
+          "bootstrap_95ci_pct_change": [
+            74.72290841297828,
+            92.9608563977128
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.0718552584603801e-16,
+          "bootstrap_95ci_pct_change": [
+            44.37829178045235,
+            56.932565592513654
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 0.0018972022824029155,
+          "bootstrap_95ci_pct_change": [
+            -4.201436248467444,
+            30.056889969405002
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.037560865455922e-35,
+          "bootstrap_95ci_pct_change": [
+            -99.29544482404792,
+            -29.795862126517097
+          ]
+        }
+      ],
+      "runtime_seconds": 71.10444688796997,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 0,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 83173.17689439817,
+        "sba_croston": 28547.63550061806,
+        "tuned_s_s": 18014.882877224954,
+        "pooled_lightgbm": 9690.433487954866,
+        "monte_carlo_lookahead": 18439.642972315098
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 77.82982006840112,
+        "vs_sba": 35.40745967589548,
+        "vs_tuned_s_s": -2.357828790700278,
+        "vs_pooled_lightgbm": -90.28708050300776
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 180,
+        "vs_sba": 179,
+        "vs_tuned_s_s": 80,
+        "vs_pooled_lightgbm": 27
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 4.134161245500214e-09,
+          "bootstrap_95ci_pct_change": [
+            68.9350576303132,
+            83.41047790535484
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 0.00023043995434718798,
+          "bootstrap_95ci_pct_change": [
+            21.673341052168514,
+            46.42212398357855
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 2.019006430143853e-14,
+          "bootstrap_95ci_pct_change": [
+            -31.20307115192409,
+            20.406804953570752
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.517910494271651e-38,
+          "bootstrap_95ci_pct_change": [
+            -126.3298748300303,
+            -62.330331321386
+          ]
+        }
+      ],
+      "runtime_seconds": 0.0,
+      "source": "research/m5_integer_order_sensitivity_analysis.json"
+    },
+    {
+      "sample_seed": 1,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 61851.11788308228,
+        "sba_croston": 30331.305633181975,
+        "tuned_s_s": 17011.273803821805,
+        "pooled_lightgbm": 13808.169667586522,
+        "monte_carlo_lookahead": 18332.722244057342
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 70.35991769993252,
+        "vs_sba": 39.558413786178626,
+        "vs_tuned_s_s": -7.768074604375941,
+        "vs_pooled_lightgbm": -32.76721452150038
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 183,
+        "vs_sba": 197,
+        "vs_tuned_s_s": 101,
+        "vs_pooled_lightgbm": 48
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.4560743331120802e-09,
+          "bootstrap_95ci_pct_change": [
+            60.637375406521834,
+            76.51585174347247
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.0442682208553229e-06,
+          "bootstrap_95ci_pct_change": [
+            28.447817791622473,
+            48.26896292865201
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.6596977287683742e-09,
+          "bootstrap_95ci_pct_change": [
+            -29.10299642206434,
+            8.468408635290213
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 6.160000565417533e-26,
+          "bootstrap_95ci_pct_change": [
+            -62.98213125917288,
+            -9.25272465309928
+          ]
+        }
+      ],
+      "runtime_seconds": 83.08856081962585,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 2,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 79791.74863694335,
+        "sba_croston": 28535.381485102578,
+        "tuned_s_s": 16828.57665048301,
+        "pooled_lightgbm": 12155.287165431568,
+        "monte_carlo_lookahead": 20141.938428181093
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 74.75686550018101,
+        "vs_sba": 29.414161017274076,
+        "vs_tuned_s_s": -19.68890088873312,
+        "vs_pooled_lightgbm": -65.70516314466654
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 174,
+        "vs_sba": 188,
+        "vs_tuned_s_s": 91,
+        "vs_pooled_lightgbm": 26
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.6528968310942276e-07,
+          "bootstrap_95ci_pct_change": [
+            61.348387372297566,
+            82.26749894477456
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 4.4753879808770945e-06,
+          "bootstrap_95ci_pct_change": [
+            18.258719837439155,
+            38.215032895165606
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 2.972789717165572e-13,
+          "bootstrap_95ci_pct_change": [
+            -40.46332269950184,
+            -5.122726083068411
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 3.0119819954781495e-39,
+          "bootstrap_95ci_pct_change": [
+            -120.63932429336646,
+            -29.214770072076135
+          ]
+        }
+      ],
+      "runtime_seconds": 92.10114598274231,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 3,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 64641.85284456774,
+        "sba_croston": 30969.878801080737,
+        "tuned_s_s": 17138.51053872997,
+        "pooled_lightgbm": 14684.481378875063,
+        "monte_carlo_lookahead": 19416.997472045892
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 69.96218917373184,
+        "vs_sba": 37.30360523280992,
+        "vs_tuned_s_s": -13.294544634826622,
+        "vs_pooled_lightgbm": -32.22800976804652
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 179,
+        "vs_sba": 192,
+        "vs_tuned_s_s": 94,
+        "vs_pooled_lightgbm": 45
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 5.411656188089375e-07,
+          "bootstrap_95ci_pct_change": [
+            61.69180541815094,
+            76.04817786360256
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 5.288028921335044e-06,
+          "bootstrap_95ci_pct_change": [
+            25.898227476803704,
+            47.110019047213385
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.244040298439343e-12,
+          "bootstrap_95ci_pct_change": [
+            -30.377286933670394,
+            1.1825791892185067
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.9629171581869402e-31,
+          "bootstrap_95ci_pct_change": [
+            -82.67253600572033,
+            6.959018097622048
+          ]
+        }
+      ],
+      "runtime_seconds": 92.66672205924988,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 4,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 59981.003499302955,
+        "sba_croston": 28482.57227685757,
+        "tuned_s_s": 16949.323628593047,
+        "pooled_lightgbm": 11761.210669339636,
+        "monte_carlo_lookahead": 19809.940312624418
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 66.97297618094264,
+        "vs_sba": 30.448907071780763,
+        "vs_tuned_s_s": -16.8774680731542,
+        "vs_pooled_lightgbm": -68.43453339601389
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 170,
+        "vs_sba": 186,
+        "vs_tuned_s_s": 80,
+        "vs_pooled_lightgbm": 31
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 6.293485251483718e-06,
+          "bootstrap_95ci_pct_change": [
+            57.68438949141591,
+            73.30853489476952
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.7922722616108883e-05,
+          "bootstrap_95ci_pct_change": [
+            19.521508817426817,
+            38.281120488972164
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.616441325090991e-16,
+          "bootstrap_95ci_pct_change": [
+            -44.09712613400629,
+            1.9921543315950527
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 2.910985206428155e-37,
+          "bootstrap_95ci_pct_change": [
+            -106.3851675416368,
+            -37.821757352886586
+          ]
+        }
+      ],
+      "runtime_seconds": 81.11372590065002,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 5,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 77703.77339875637,
+        "sba_croston": 33321.46546722279,
+        "tuned_s_s": 18210.240865345215,
+        "pooled_lightgbm": 13763.786650132275,
+        "monte_carlo_lookahead": 17691.53195413968
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 77.23208130015622,
+        "vs_sba": 46.906500941435944,
+        "vs_tuned_s_s": 2.848446184985176,
+        "vs_pooled_lightgbm": -28.53680752142185
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 195,
+        "vs_sba": 203,
+        "vs_tuned_s_s": 108,
+        "vs_pooled_lightgbm": 47
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 1.0065612977851841e-11,
+          "bootstrap_95ci_pct_change": [
+            70.46321151041688,
+            81.90952112411762
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 2.364268813006428e-10,
+          "bootstrap_95ci_pct_change": [
+            37.1303903993202,
+            54.21060818982842
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 9.656341582127553e-07,
+          "bootstrap_95ci_pct_change": [
+            -17.74587677592675,
+            18.602082651534523
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.7556165375880626e-30,
+          "bootstrap_95ci_pct_change": [
+            -64.0972803156223,
+            -4.022560491066576
+          ]
+        }
+      ],
+      "runtime_seconds": 70.24261569976807,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 6,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 65462.30972861113,
+        "sba_croston": 27449.8375306826,
+        "tuned_s_s": 14043.011808513394,
+        "pooled_lightgbm": 11711.05732787975,
+        "monte_carlo_lookahead": 17011.022406563054
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 74.01402046905142,
+        "vs_sba": 38.02869547934975,
+        "vs_tuned_s_s": -21.135142792163286,
+        "vs_pooled_lightgbm": -45.25607663166351
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 187,
+        "vs_sba": 199,
+        "vs_tuned_s_s": 94,
+        "vs_pooled_lightgbm": 29
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.115604386368483e-09,
+          "bootstrap_95ci_pct_change": [
+            63.59557230078667,
+            80.95760165632721
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 3.081242021156138e-08,
+          "bootstrap_95ci_pct_change": [
+            28.865789602074955,
+            45.07654055586585
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 1.4801886284138088e-11,
+          "bootstrap_95ci_pct_change": [
+            -36.28391412181543,
+            -8.593475111508145
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.2740682447329808e-36,
+          "bootstrap_95ci_pct_change": [
+            -103.63229864072103,
+            -1.9147095494845139
+          ]
+        }
+      ],
+      "runtime_seconds": 72.40558385848999,
+      "source": "rerun"
+    },
+    {
+      "sample_seed": 7,
+      "axis": "holding_rate",
+      "value": 0.35,
+      "holding_rate": 0.35,
+      "stockout_multiplier": 1.0,
+      "n_evaluated": 324,
+      "cost_totals": {
+        "gaussian_order_up_to": 106137.45647630794,
+        "sba_croston": 28071.860914023753,
+        "tuned_s_s": 16931.05042614531,
+        "pooled_lightgbm": 9909.09421378595,
+        "monte_carlo_lookahead": 17650.40844706113
+      },
+      "cost_reduction_pct": {
+        "vs_gaussian": 83.37023607589366,
+        "vs_sba": 37.12419528894295,
+        "vs_tuned_s_s": -4.248750094116849,
+        "vs_pooled_lightgbm": -78.12332859349686
+      },
+      "n_lookahead_lower_cost": {
+        "vs_gaussian": 178,
+        "vs_sba": 188,
+        "vs_tuned_s_s": 92,
+        "vs_pooled_lightgbm": 29
+      },
+      "paired_comparisons": [
+        {
+          "comparison": "fused vs naive Gaussian order-up-to",
+          "wilcoxon_signed_rank_p": 3.2310464708971457e-09,
+          "bootstrap_95ci_pct_change": [
+            66.96418815363754,
+            90.63436380633392
+          ]
+        },
+        {
+          "comparison": "fused vs SBA/Croston order-up-to",
+          "wilcoxon_signed_rank_p": 1.6672492222247694e-06,
+          "bootstrap_95ci_pct_change": [
+            28.320498588418697,
+            44.11716649557644
+          ]
+        },
+        {
+          "comparison": "fused vs tuned (s,S) [simulation-optimized]",
+          "wilcoxon_signed_rank_p": 3.905919202402682e-11,
+          "bootstrap_95ci_pct_change": [
+            -27.662941236033255,
+            12.70205650145814
+          ]
+        },
+        {
+          "comparison": "fused vs pooled ML quantile (LightGBM newsvendor)",
+          "wilcoxon_signed_rank_p": 1.5297033203689434e-38,
+          "bootstrap_95ci_pct_change": [
+            -112.03372385244795,
+            -47.43651034141395
+          ]
+        }
+      ],
+      "runtime_seconds": 71.26995801925659,
+      "source": "rerun"
+    }
+  ],
+  "completed_new_runs": 49,
+  "expected_new_runs": 49,
+  "summary": [
+    {
+      "axis": "stockout_multiplier",
+      "value": 0.25,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 51.800261775236564,
+          "min_pct": 41.54917430962834,
+          "max_pct": 67.54236675474301,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": -12.12815257051839,
+          "min_pct": -19.761743179559723,
+          "max_pct": 2.762912509226212,
+          "n_draws_lookahead_lower_cost": 1
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": -62.05929204892035,
+          "min_pct": -75.89922959080009,
+          "max_pct": -49.841882594959074,
+          "n_draws_lookahead_lower_cost": 0
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -90.3229481989782,
+          "min_pct": -121.37838820674074,
+          "max_pct": -63.49419153910918,
+          "n_draws_lookahead_lower_cost": 0
+        }
+      }
+    },
+    {
+      "axis": "stockout_multiplier",
+      "value": 0.5,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 71.85968461000103,
+          "min_pct": 64.13785711075238,
+          "max_pct": 81.64310353997357,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": 31.19498194766398,
+          "min_pct": 23.96716005211321,
+          "max_pct": 42.211839741402855,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": -17.090860248619315,
+          "min_pct": -29.305115045979612,
+          "max_pct": -3.556587449409876,
+          "n_draws_lookahead_lower_cost": 0
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -58.700951893887776,
+          "min_pct": -96.25432192129475,
+          "max_pct": -31.930597401276263,
+          "n_draws_lookahead_lower_cost": 0
+        }
+      }
+    },
+    {
+      "axis": "stockout_multiplier",
+      "value": 0.75,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 79.14810529711599,
+          "min_pct": 72.39868698676322,
+          "max_pct": 86.7622529084333,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": 48.10918752316532,
+          "min_pct": 40.97623605951354,
+          "max_pct": 57.44614783405315,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": 5.438721618818082,
+          "min_pct": -4.908417873940474,
+          "max_pct": 17.846402344665215,
+          "n_draws_lookahead_lower_cost": 5
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -42.96515886476276,
+          "min_pct": -82.50848834954058,
+          "max_pct": -15.829460659280926,
+          "n_draws_lookahead_lower_cost": 0
+        }
+      }
+    },
+    {
+      "axis": "stockout_multiplier",
+      "value": 2.0,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 88.76461598799031,
+          "min_pct": 83.56054533866865,
+          "max_pct": 93.41082979741336,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": 71.38403124027144,
+          "min_pct": 64.33058313182667,
+          "max_pct": 78.29358564047754,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": 42.243070371154914,
+          "min_pct": 29.307953687450105,
+          "max_pct": 53.7665208914083,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -20.282764977378648,
+          "min_pct": -62.55345868009186,
+          "max_pct": 16.874681393967773,
+          "n_draws_lookahead_lower_cost": 3
+        }
+      }
+    },
+    {
+      "axis": "holding_rate",
+      "value": 0.15,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 85.84875111174337,
+          "min_pct": 80.32695237575376,
+          "max_pct": 91.39894136403035,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": 64.21652354350965,
+          "min_pct": 57.55859306481537,
+          "max_pct": 72.02799568809981,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": 30.06358604439523,
+          "min_pct": 18.71209958211303,
+          "max_pct": 42.509197719763236,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -28.785603113698958,
+          "min_pct": -73.78022873890167,
+          "max_pct": 1.4274127482648002,
+          "n_draws_lookahead_lower_cost": 2
+        }
+      }
+    },
+    {
+      "axis": "holding_rate",
+      "value": 0.25,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 80.00726473184857,
+          "min_pct": 73.48809096922162,
+          "max_pct": 87.36753460369499,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": 50.13705469790322,
+          "min_pct": 43.087277300878114,
+          "max_pct": 59.19266689175839,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": 8.532940507872777,
+          "min_pct": -1.4565361256761777,
+          "max_pct": 20.556032024307846,
+          "n_draws_lookahead_lower_cost": 7
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -41.72365483758392,
+          "min_pct": -75.42652431593879,
+          "max_pct": -13.455918859312588,
+          "n_draws_lookahead_lower_cost": 0
+        }
+      }
+    },
+    {
+      "axis": "holding_rate",
+      "value": 0.35,
+      "n_draws": 8,
+      "aggregate_cost_reduction": {
+        "vs_gaussian": {
+          "mean_pct": 74.3122633085363,
+          "min_pct": 66.97297618094264,
+          "max_pct": 83.37023607589366,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_sba": {
+          "mean_pct": 36.77399231170844,
+          "min_pct": 29.414161017274076,
+          "max_pct": 46.906500941435944,
+          "n_draws_lookahead_lower_cost": 8
+        },
+        "vs_tuned_s_s": {
+          "mean_pct": -10.31528296163564,
+          "min_pct": -21.135142792163286,
+          "max_pct": 2.848446184985176,
+          "n_draws_lookahead_lower_cost": 1
+        },
+        "vs_pooled_lightgbm": {
+          "mean_pct": -55.16727675997716,
+          "min_pct": -90.28708050300776,
+          "max_pct": -28.53680752142185,
+          "n_draws_lookahead_lower_cost": 0
+        }
+      }
+    }
+  ]
+}

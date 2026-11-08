@@ -1,0 +1,211 @@
+{
+  "analysis": "complete M5 benchmark census; descriptive finite-benchmark results",
+  "series_count": 30490,
+  "strata_count": 27,
+  "all_available_series_selected": true,
+  "missing_price_series": 0,
+  "config": {
+    "test_days": 364,
+    "review_period_days": 7,
+    "fit_window": 180,
+    "cal_window": 90,
+    "refit_period_days": 28,
+    "aci_gamma": 0.03,
+    "operational_level": 0.9,
+    "annual_holding_rate": 0.2,
+    "sample_seed": 0,
+    "n_per_stratum": 100000,
+    "opening_inventory_mode": "gaussian_target",
+    "planner_seed_base": 0,
+    "integer_order_units": true,
+    "ml_training_window_days": 180,
+    "stratification_zero_fraction_days_end_exclusive": 1577
+  },
+  "aggregate_costs": {
+    "gaussian_order_up_to": 8104836.670288615,
+    "sba_croston": 3150365.9811108797,
+    "tuned_s_S": 1647246.5712190922,
+    "pooled_lightgbm": 706807.9514395333,
+    "mcts_lookahead": 1161595.786491204
+  },
+  "mcts_comparisons": {
+    "gaussian_order_up_to": {
+      "aggregate_cost_reduction_pct": 85.66786927675571,
+      "series_won": 21112,
+      "series_count": 30490,
+      "series_win_share": 0.6924237454903247
+    },
+    "sba_croston": {
+      "aggregate_cost_reduction_pct": 63.12822721372826,
+      "series_won": 24077,
+      "series_count": 30490,
+      "series_win_share": 0.7896687438504427
+    },
+    "tuned_s_S": {
+      "aggregate_cost_reduction_pct": 29.48257979183215,
+      "series_won": 14448,
+      "series_count": 30490,
+      "series_win_share": 0.4738602820596917
+    },
+    "pooled_lightgbm": {
+      "aggregate_cost_reduction_pct": -64.34390475169653,
+      "series_won": 3079,
+      "series_count": 30490,
+      "series_win_share": 0.1009839291571007
+    }
+  },
+  "coverage": {
+    "0.8": {
+      "nominal": 0.8,
+      "mean_series_coverage": 0.8033222926630602,
+      "sd_across_series": 0.011275343234893789
+    },
+    "0.9": {
+      "nominal": 0.9,
+      "mean_series_coverage": 0.9016890783863561,
+      "sd_across_series": 0.006007174069918232
+    }
+  },
+  "mcts_to_lightgbm_per_series_cost_ratio_percentiles": {
+    "10": 0.995329329674236,
+    "25": 1.4640750934244016,
+    "50": 1.9101072959403773,
+    "75": 2.413778663432103,
+    "90": 3.4675788255062647
+  },
+  "by_category": {
+    "FOODS": {
+      "series_count": 14370,
+      "mcts_cost": 579505.359489514,
+      "lightgbm_cost": 433887.1679757324,
+      "mcts_cost_reduction_vs_lightgbm_pct": -33.561304012089636,
+      "mcts_series_won_vs_lightgbm": 2066,
+      "mcts_series_win_share_vs_lightgbm": 0.14377174669450243
+    },
+    "HOBBIES": {
+      "series_count": 5650,
+      "mcts_cost": 183540.88190712014,
+      "lightgbm_cost": 71639.26169707383,
+      "mcts_cost_reduction_vs_lightgbm_pct": -156.20152631279427,
+      "mcts_series_won_vs_lightgbm": 374,
+      "mcts_series_win_share_vs_lightgbm": 0.06619469026548673
+    },
+    "HOUSEHOLD": {
+      "series_count": 10470,
+      "mcts_cost": 398549.5450945699,
+      "lightgbm_cost": 201281.52176672695,
+      "mcts_cost_reduction_vs_lightgbm_pct": -98.0060273771502,
+      "mcts_series_won_vs_lightgbm": 639,
+      "mcts_series_win_share_vs_lightgbm": 0.06103151862464183
+    }
+  },
+  "by_state": {
+    "CA": {
+      "series_count": 12196,
+      "mcts_cost": 483464.32134933944,
+      "lightgbm_cost": 297203.84203845443,
+      "mcts_cost_reduction_vs_lightgbm_pct": -62.67095271493337,
+      "mcts_series_won_vs_lightgbm": 1123,
+      "mcts_series_win_share_vs_lightgbm": 0.09207937028533945
+    },
+    "TX": {
+      "series_count": 9147,
+      "mcts_cost": 327199.97370373295,
+      "lightgbm_cost": 199850.07092993826,
+      "mcts_cost_reduction_vs_lightgbm_pct": -63.72272082827528,
+      "mcts_series_won_vs_lightgbm": 1082,
+      "mcts_series_win_share_vs_lightgbm": 0.1182901497758828
+    },
+    "WI": {
+      "series_count": 9147,
+      "mcts_cost": 350931.4914381318,
+      "lightgbm_cost": 209754.0384711405,
+      "mcts_cost_reduction_vs_lightgbm_pct": -67.30619062021803,
+      "mcts_series_won_vs_lightgbm": 874,
+      "mcts_series_win_share_vs_lightgbm": 0.09555045370066688
+    }
+  },
+  "by_store": {
+    "CA_1": {
+      "series_count": 3049,
+      "mcts_cost": 115633.42125693597,
+      "lightgbm_cost": 69489.32759515248,
+      "mcts_cost_reduction_vs_lightgbm_pct": -66.40457644175342,
+      "mcts_series_won_vs_lightgbm": 257,
+      "mcts_series_win_share_vs_lightgbm": 0.084289931124959
+    },
+    "CA_2": {
+      "series_count": 3049,
+      "mcts_cost": 130926.26306895359,
+      "lightgbm_cost": 66512.34815404491,
+      "mcts_cost_reduction_vs_lightgbm_pct": -96.84504712677382,
+      "mcts_series_won_vs_lightgbm": 252,
+      "mcts_series_win_share_vs_lightgbm": 0.08265004919645785
+    },
+    "CA_3": {
+      "series_count": 3049,
+      "mcts_cost": 146235.34284695034,
+      "lightgbm_cost": 120108.46298151085,
+      "mcts_cost_reduction_vs_lightgbm_pct": -21.752738497254253,
+      "mcts_series_won_vs_lightgbm": 377,
+      "mcts_series_win_share_vs_lightgbm": 0.12364709740898655
+    },
+    "CA_4": {
+      "series_count": 3049,
+      "mcts_cost": 90669.29417649955,
+      "lightgbm_cost": 41093.70330774621,
+      "mcts_cost_reduction_vs_lightgbm_pct": -120.64035820156485,
+      "mcts_series_won_vs_lightgbm": 237,
+      "mcts_series_win_share_vs_lightgbm": 0.07773040341095441
+    },
+    "TX_1": {
+      "series_count": 3049,
+      "mcts_cost": 101951.28431170432,
+      "lightgbm_cost": 63814.63179375367,
+      "mcts_cost_reduction_vs_lightgbm_pct": -59.76161179023454,
+      "mcts_series_won_vs_lightgbm": 388,
+      "mcts_series_win_share_vs_lightgbm": 0.12725483765168907
+    },
+    "TX_2": {
+      "series_count": 3049,
+      "mcts_cost": 107606.50532728003,
+      "lightgbm_cost": 68314.32411049744,
+      "mcts_cost_reduction_vs_lightgbm_pct": -57.516753226201935,
+      "mcts_series_won_vs_lightgbm": 334,
+      "mcts_series_win_share_vs_lightgbm": 0.10954411282387667
+    },
+    "TX_3": {
+      "series_count": 3049,
+      "mcts_cost": 117642.18406474858,
+      "lightgbm_cost": 67721.11502568715,
+      "mcts_cost_reduction_vs_lightgbm_pct": -73.71566315782896,
+      "mcts_series_won_vs_lightgbm": 360,
+      "mcts_series_win_share_vs_lightgbm": 0.11807149885208265
+    },
+    "WI_1": {
+      "series_count": 3049,
+      "mcts_cost": 100102.95509828927,
+      "lightgbm_cost": 54264.83699657651,
+      "mcts_cost_reduction_vs_lightgbm_pct": -84.47112465223958,
+      "mcts_series_won_vs_lightgbm": 240,
+      "mcts_series_win_share_vs_lightgbm": 0.0787143325680551
+    },
+    "WI_2": {
+      "series_count": 3049,
+      "mcts_cost": 137901.33267375838,
+      "lightgbm_cost": 90423.1073405901,
+      "mcts_cost_reduction_vs_lightgbm_pct": -52.506739404935,
+      "mcts_series_won_vs_lightgbm": 325,
+      "mcts_series_win_share_vs_lightgbm": 0.10659232535257461
+    },
+    "WI_3": {
+      "series_count": 3049,
+      "mcts_cost": 112927.20366608413,
+      "lightgbm_cost": 65066.09413397388,
+      "mcts_cost_reduction_vs_lightgbm_pct": -73.55768033895222,
+      "mcts_series_won_vs_lightgbm": 309,
+      "mcts_series_win_share_vs_lightgbm": 0.10134470318137094
+    }
+  },
+  "inference_note": "No series-level p-values or confidence intervals are interpreted: this is a census of the released M5 benchmark, whose series share stores, calendar shocks, and pooled model fits. Results remain conditional on one planner-seed base and the stated price-proxy simulator."
+}

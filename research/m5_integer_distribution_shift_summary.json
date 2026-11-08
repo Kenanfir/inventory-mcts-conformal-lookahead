@@ -1,0 +1,393 @@
+{
+  "design": {
+    "sample_seeds": [
+      0,
+      1,
+      4,
+      7
+    ],
+    "integer_order_units": true,
+    "opening_inventory_mode": "gaussian_target",
+    "planner_seed_base": 0,
+    "shock_multiplier": 1.8,
+    "shock_day_offset": 189,
+    "aci_disabled_definition": "gamma=0 with the same rolling refits retained",
+    "inference_scope": "paired item-store comparisons within each 324-series sample; not full-catalog inference"
+  },
+  "per_sample_segment": [
+    {
+      "sample_seed": 0,
+      "segment": "pre",
+      "segment_days": 189,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -56.05003955974674,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -67.87011202226172,
+      "incremental_aci_effect_on_reduction_percentage_points": 11.820072462514979,
+      "full_aci_fused_cost": 6167.776029827595,
+      "aci_disabled_fused_cost": 6634.956684256154,
+      "aci_disabled_cost_reduction_vs_full_pct": -7.574539869302255,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, pre, seed 0",
+        "wilcoxon_signed_rank_p": 0.0012038249669665286,
+        "bootstrap_95ci_pct_change": [
+          -14.56682617593214,
+          -1.139912920265715
+        ]
+      }
+    },
+    {
+      "sample_seed": 0,
+      "segment": "post_pre_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": 77.96214081331854,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": 73.78449644765952,
+      "incremental_aci_effect_on_reduction_percentage_points": 4.17764436565902,
+      "full_aci_fused_cost": 1332.15366742887,
+      "aci_disabled_fused_cost": 1584.6856495866273,
+      "aci_disabled_cost_reduction_vs_full_pct": -18.95667056527779,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_pre_refit, seed 0",
+        "wilcoxon_signed_rank_p": 3.9346173572129415e-15,
+        "bootstrap_95ci_pct_change": [
+          -57.244494278191404,
+          9.39708645830127
+        ]
+      }
+    },
+    {
+      "sample_seed": 0,
+      "segment": "post_after_first_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -38.79241563970075,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -1.7680505294946247,
+      "incremental_aci_effect_on_reduction_percentage_points": -37.024365110206126,
+      "full_aci_fused_cost": 2187.8611267422584,
+      "aci_disabled_fused_cost": 1604.2257112652646,
+      "aci_disabled_cost_reduction_vs_full_pct": 26.67607227639861,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_after_first_refit, seed 0",
+        "wilcoxon_signed_rank_p": 1.7268762559594128e-37,
+        "bootstrap_95ci_pct_change": [
+          11.038241656682485,
+          45.10956555126523
+        ]
+      }
+    },
+    {
+      "sample_seed": 0,
+      "segment": "post_late",
+      "segment_days": 119,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -201.8279145682652,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -139.80782366588588,
+      "incremental_aci_effect_on_reduction_percentage_points": -62.02009090237931,
+      "full_aci_fused_cost": 9926.207284487247,
+      "aci_disabled_fused_cost": 7886.554063610219,
+      "aci_disabled_cost_reduction_vs_full_pct": 20.548162681073713,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_late, seed 0",
+        "wilcoxon_signed_rank_p": 2.455689568801083e-34,
+        "bootstrap_95ci_pct_change": [
+          11.595832835417278,
+          27.89131405283707
+        ]
+      }
+    },
+    {
+      "sample_seed": 1,
+      "segment": "pre",
+      "segment_days": 189,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -16.212558942922108,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -27.17967383868234,
+      "incremental_aci_effect_on_reduction_percentage_points": 10.967114895760233,
+      "full_aci_fused_cost": 5825.864199059539,
+      "aci_disabled_fused_cost": 6375.657806732899,
+      "aci_disabled_cost_reduction_vs_full_pct": -9.437116775947384,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, pre, seed 1",
+        "wilcoxon_signed_rank_p": 0.00019871527471570198,
+        "bootstrap_95ci_pct_change": [
+          -23.810209356872775,
+          0.8816059374123564
+        ]
+      }
+    },
+    {
+      "sample_seed": 1,
+      "segment": "post_pre_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": 80.34949670401966,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": 77.85074745981983,
+      "incremental_aci_effect_on_reduction_percentage_points": 2.4987492441998285,
+      "full_aci_fused_cost": 1273.1764113203421,
+      "aci_disabled_fused_cost": 1435.0729565437166,
+      "aci_disabled_cost_reduction_vs_full_pct": -12.715955446855975,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_pre_refit, seed 1",
+        "wilcoxon_signed_rank_p": 9.061067880260627e-15,
+        "bootstrap_95ci_pct_change": [
+          -41.61355022456954,
+          9.983558214802983
+        ]
+      }
+    },
+    {
+      "sample_seed": 1,
+      "segment": "post_after_first_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -8.00351506821919,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": 5.814048221120471,
+      "incremental_aci_effect_on_reduction_percentage_points": -13.817563289339661,
+      "full_aci_fused_cost": 1630.4275881043736,
+      "aci_disabled_fused_cost": 1421.8368179513122,
+      "aci_disabled_cost_reduction_vs_full_pct": 12.793623689573398,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_after_first_refit, seed 1",
+        "wilcoxon_signed_rank_p": 3.581446125399647e-33,
+        "bootstrap_95ci_pct_change": [
+          -26.045018972614972,
+          39.60183985709806
+        ]
+      }
+    },
+    {
+      "sample_seed": 1,
+      "segment": "post_late",
+      "segment_days": 119,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -21.962703107185668,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -8.116140761272428,
+      "incremental_aci_effect_on_reduction_percentage_points": -13.84656234591324,
+      "full_aci_fused_cost": 10307.147424210636,
+      "aci_disabled_fused_cost": 9136.965427732377,
+      "aci_disabled_cost_reduction_vs_full_pct": 11.353112052415181,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_late, seed 1",
+        "wilcoxon_signed_rank_p": 1.9363912043955802e-28,
+        "bootstrap_95ci_pct_change": [
+          3.025429633596495,
+          19.473919731505763
+        ]
+      }
+    },
+    {
+      "sample_seed": 4,
+      "segment": "pre",
+      "segment_days": 189,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -91.98431470432963,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -95.9127129693334,
+      "incremental_aci_effect_on_reduction_percentage_points": 3.9283982650037643,
+      "full_aci_fused_cost": 6605.743906547261,
+      "aci_disabled_fused_cost": 6740.911161963435,
+      "aci_disabled_cost_reduction_vs_full_pct": -2.046207926441168,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, pre, seed 4",
+        "wilcoxon_signed_rank_p": 0.004423095887625377,
+        "bootstrap_95ci_pct_change": [
+          -8.403144457752319,
+          3.1066552487749477
+        ]
+      }
+    },
+    {
+      "sample_seed": 4,
+      "segment": "post_pre_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": 55.219149948837895,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": 51.93335706718175,
+      "incremental_aci_effect_on_reduction_percentage_points": 3.2857928816561426,
+      "full_aci_fused_cost": 2629.369322669433,
+      "aci_disabled_fused_cost": 2822.299179824927,
+      "aci_disabled_cost_reduction_vs_full_pct": -7.33749555424279,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_pre_refit, seed 4",
+        "wilcoxon_signed_rank_p": 1.5983991973543596e-16,
+        "bootstrap_95ci_pct_change": [
+          -140.4259029303857,
+          22.56373280188197
+        ]
+      }
+    },
+    {
+      "sample_seed": 4,
+      "segment": "post_after_first_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": 41.28908040152419,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": 52.43508520191402,
+      "incremental_aci_effect_on_reduction_percentage_points": -11.146004800389832,
+      "full_aci_fused_cost": 1823.5553803382775,
+      "aci_disabled_fused_cost": 1477.3615689990525,
+      "aci_disabled_cost_reduction_vs_full_pct": 18.984551556367023,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_after_first_refit, seed 4",
+        "wilcoxon_signed_rank_p": 6.72506864896656e-34,
+        "bootstrap_95ci_pct_change": [
+          1.2630022372477074,
+          35.447525209291705
+        ]
+      }
+    },
+    {
+      "sample_seed": 4,
+      "segment": "post_late",
+      "segment_days": 119,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -79.85202332058563,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -47.841740344136085,
+      "incremental_aci_effect_on_reduction_percentage_points": -32.010282976449545,
+      "full_aci_fused_cost": 9495.719319315333,
+      "aci_disabled_fused_cost": 7805.659586518143,
+      "aci_disabled_cost_reduction_vs_full_pct": 17.798122248194748,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_late, seed 4",
+        "wilcoxon_signed_rank_p": 7.342360687111313e-28,
+        "bootstrap_95ci_pct_change": [
+          10.929319470035837,
+          23.225573541422253
+        ]
+      }
+    },
+    {
+      "sample_seed": 7,
+      "segment": "pre",
+      "segment_days": 189,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -73.74468088103114,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -77.40564030862762,
+      "incremental_aci_effect_on_reduction_percentage_points": 3.660959427596481,
+      "full_aci_fused_cost": 5742.722378479699,
+      "aci_disabled_fused_cost": 5863.726794413216,
+      "aci_disabled_cost_reduction_vs_full_pct": -2.1070915144177915,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, pre, seed 7",
+        "wilcoxon_signed_rank_p": 0.0009383175300819855,
+        "bootstrap_95ci_pct_change": [
+          -7.252574104001461,
+          2.1013688056535753
+        ]
+      }
+    },
+    {
+      "sample_seed": 7,
+      "segment": "post_pre_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": 85.34420539080689,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": 84.23931044691273,
+      "incremental_aci_effect_on_reduction_percentage_points": 1.1048949438941662,
+      "full_aci_fused_cost": 973.7025682644339,
+      "aci_disabled_fused_cost": 1047.1096453435096,
+      "aci_disabled_cost_reduction_vs_full_pct": -7.538963074722016,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_pre_refit, seed 7",
+        "wilcoxon_signed_rank_p": 2.085451418705404e-20,
+        "bootstrap_95ci_pct_change": [
+          -41.08838631913712,
+          14.3266513884071
+        ]
+      }
+    },
+    {
+      "sample_seed": 7,
+      "segment": "post_after_first_refit",
+      "segment_days": 28,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -46.850560148367215,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -35.95021083777008,
+      "incremental_aci_effect_on_reduction_percentage_points": -10.900349310597136,
+      "full_aci_fused_cost": 2009.8040622287044,
+      "aci_disabled_fused_cost": 1860.621339997232,
+      "aci_disabled_cost_reduction_vs_full_pct": 7.422749562265352,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_after_first_refit, seed 7",
+        "wilcoxon_signed_rank_p": 1.9766066726146154e-38,
+        "bootstrap_95ci_pct_change": [
+          -39.83595632754461,
+          38.44011327582913
+        ]
+      }
+    },
+    {
+      "sample_seed": 7,
+      "segment": "post_late",
+      "segment_days": 119,
+      "full_aci_fused_vs_ml_cost_reduction_pct": -52.38708655790705,
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": -39.18809212497698,
+      "incremental_aci_effect_on_reduction_percentage_points": -13.198994432930064,
+      "full_aci_fused_cost": 8354.158667282842,
+      "aci_disabled_fused_cost": 7630.563930799843,
+      "aci_disabled_cost_reduction_vs_full_pct": 8.661491423628242,
+      "paired_no_aci_vs_full_aci": {
+        "comparison": "no ACI vs full ACI, post_late, seed 7",
+        "wilcoxon_signed_rank_p": 3.3275730098930135e-32,
+        "bootstrap_95ci_pct_change": [
+          -6.658667596951228,
+          20.969351673944608
+        ]
+      }
+    }
+  ],
+  "summary_by_segment": {
+    "pre": {
+      "full_aci_fused_vs_ml_cost_reduction_pct": {
+        "mean": -59.49789852200741,
+        "min": -91.98431470432963,
+        "max": -16.212558942922108
+      },
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": {
+        "mean": -67.09203478472628,
+        "min": -95.9127129693334,
+        "max": -27.17967383868234
+      },
+      "incremental_aci_effect_on_reduction_percentage_points": {
+        "mean": 7.594136262718864,
+        "min": 3.660959427596481,
+        "max": 11.820072462514979
+      }
+    },
+    "post_pre_refit": {
+      "full_aci_fused_vs_ml_cost_reduction_pct": {
+        "mean": 74.71874821424575,
+        "min": 55.219149948837895,
+        "max": 85.34420539080689
+      },
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": {
+        "mean": 71.95197785539347,
+        "min": 51.93335706718175,
+        "max": 84.23931044691273
+      },
+      "incremental_aci_effect_on_reduction_percentage_points": {
+        "mean": 2.7667703588522894,
+        "min": 1.1048949438941662,
+        "max": 4.17764436565902
+      }
+    },
+    "post_after_first_refit": {
+      "full_aci_fused_vs_ml_cost_reduction_pct": {
+        "mean": -13.08935261369074,
+        "min": -46.850560148367215,
+        "max": 41.28908040152419
+      },
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": {
+        "mean": 5.132718013942446,
+        "min": -35.95021083777008,
+        "max": 52.43508520191402
+      },
+      "incremental_aci_effect_on_reduction_percentage_points": {
+        "mean": -18.222070627633187,
+        "min": -37.024365110206126,
+        "max": -10.900349310597136
+      }
+    },
+    "post_late": {
+      "full_aci_fused_vs_ml_cost_reduction_pct": {
+        "mean": -89.00743188848587,
+        "min": -201.8279145682652,
+        "max": -21.962703107185668
+      },
+      "aci_disabled_fused_vs_ml_cost_reduction_pct": {
+        "mean": -58.73844922406784,
+        "min": -139.80782366588588,
+        "max": -8.116140761272428
+      },
+      "incremental_aci_effect_on_reduction_percentage_points": {
+        "mean": -30.26898266441804,
+        "min": -62.02009090237931,
+        "max": -13.198994432930064
+      }
+    }
+  }
+}

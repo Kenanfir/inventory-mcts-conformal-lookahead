@@ -1,0 +1,7 @@
+# Pinned environment used for the M5 analyses and project tests.
+numpy==2.3.1
+pandas==2.3.0
+scipy==1.17.0
+matplotlib==3.10.3
+lightgbm==4.7.0
+pytest==8.4.2

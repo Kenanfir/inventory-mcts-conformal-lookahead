@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or the saved results, please cite the article and this archive."
+title: "Code and saved results for: Monte Carlo Lookahead with Conformal Demand Intervals for Retail Inventory Replenishment"
+type: software
+license: MIT
+date-released: 2026-11-08
+authors:
+  - family-names: Gumelar
+    given-names: Agustinus Bimo
+    orcid: "https://orcid.org/0000-0003-4977-4800"
+  - family-names: Damastuti
+    given-names: Fardani Annisa
+    orcid: "https://orcid.org/0009-0002-2110-336X"
+  - family-names: Firmansyah
+    given-names: Kenan
+    orcid: "https://orcid.org/0009-0008-5304-3801"

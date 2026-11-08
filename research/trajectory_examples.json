@@ -1,0 +1,5036 @@
+{
+  "HOBBIES_1_166_CA_3_evaluation": {
+    "series_id": "HOBBIES_1_166_CA_3_evaluation",
+    "price": 10.95300492610839,
+    "naive_cost": 39.39446399222278,
+    "fused_cost": 158.08853537701276,
+    "ml_cost": 66.37091146997787,
+    "trajectory": {
+      "baseline": [
+        {
+          "day": 1577,
+          "holding": 0.3188885675623665,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1584,
+          "holding": 0.6549807735141856,
+          "stockout": 0.0,
+          "inventory_before": 7.590501937627941,
+          "order": 15.0,
+          "demand": 7.0
+        },
+        {
+          "day": 1591,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 15.590501937627941,
+          "order": 7.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1598,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1605,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1647,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1668,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.8650384022340726,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 20.59050193762794,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.8650384022340726,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 20.59050193762794,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.8650384022340726,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 20.59050193762794,
+          "order": 2.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.90704992797805,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 21.59050193762794,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.9490614537220273,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.696992299258163,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 6.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.48693467053827605,
+          "stockout": 0.0,
+          "inventory_before": 16.59050193762794,
+          "order": 6.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.48693467053827605,
+          "stockout": 0.0,
+          "inventory_before": 11.590501937627941,
+          "order": 11.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.5709577220262309,
+          "stockout": 0.0,
+          "inventory_before": 11.590501937627941,
+          "order": 11.0,
+          "demand": 9.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.6129692477702082,
+          "stockout": 0.0,
+          "inventory_before": 13.590501937627941,
+          "order": 9.0,
+          "demand": 8.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.5709577220262309,
+          "stockout": 0.0,
+          "inventory_before": 14.590501937627941,
+          "order": 8.0,
+          "demand": 9.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.36090009330634387,
+          "stockout": 0.0,
+          "inventory_before": 13.590501937627941,
+          "order": 9.0,
+          "demand": 14.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.48693467053827605,
+          "stockout": 0.0,
+          "inventory_before": 8.590501937627941,
+          "order": 14.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.3188885675623665,
+          "stockout": 0.0,
+          "inventory_before": 11.590501937627941,
+          "order": 11.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.3188885675623665,
+          "stockout": 0.0,
+          "inventory_before": 7.590501937627941,
+          "order": 15.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.23486551607441172,
+          "stockout": 0.0,
+          "inventory_before": 7.590501937627941,
+          "order": 15.0,
+          "demand": 17.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.4449231447942987,
+          "stockout": 0.0,
+          "inventory_before": 5.590501937627941,
+          "order": 17.0,
+          "demand": 12.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.3188885675623665,
+          "stockout": 0.0,
+          "inventory_before": 10.590501937627941,
+          "order": 12.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.2768770418183891,
+          "stockout": 0.0,
+          "inventory_before": 7.590501937627941,
+          "order": 15.0,
+          "demand": 16.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.48693467053827605,
+          "stockout": 0.0,
+          "inventory_before": 6.590501937627941,
+          "order": 16.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.2768770418183891,
+          "stockout": 0.0,
+          "inventory_before": 11.590501937627941,
+          "order": 11.0,
+          "demand": 16.0
+        }
+      ],
+      "sba": [
+        {
+          "day": 1577,
+          "holding": 0.49319131205348343,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 4.148926786266607,
+          "demand": 15.0
+        },
+        {
+          "day": 1584,
+          "holding": 0.8292835180053025,
+          "stockout": 0.0,
+          "inventory_before": 11.739428723894548,
+          "order": 15.0,
+          "demand": 7.0
+        },
+        {
+          "day": 1591,
+          "holding": 1.0813526724691669,
+          "stockout": 0.0,
+          "inventory_before": 19.739428723894548,
+          "order": 7.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1598,
+          "holding": 1.0813526724691669,
+          "stockout": 0.0,
+          "inventory_before": 25.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1605,
+          "holding": 1.0393411467251894,
+          "stockout": 0.0,
+          "inventory_before": 25.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.997329620981212,
+          "stockout": 0.0,
+          "inventory_before": 24.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.9553180952372347,
+          "stockout": 0.0,
+          "inventory_before": 23.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.9133065694932573,
+          "stockout": 0.0,
+          "inventory_before": 22.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.9133065694932573,
+          "stockout": 0.0,
+          "inventory_before": 21.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.8712950437492799,
+          "stockout": 0.0,
+          "inventory_before": 21.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1647,
+          "holding": 0.8712950437492799,
+          "stockout": 0.0,
+          "inventory_before": 20.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 0.8712950437492799,
+          "stockout": 0.0,
+          "inventory_before": 20.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 0.8712950437492799,
+          "stockout": 0.0,
+          "inventory_before": 20.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1668,
+          "holding": 0.8292835180053025,
+          "stockout": 0.0,
+          "inventory_before": 20.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.7452604665173478,
+          "stockout": 0.0,
+          "inventory_before": 19.739428723894548,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.7452604665173478,
+          "stockout": 0.0,
+          "inventory_before": 17.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.7032489407733703,
+          "stockout": 0.0,
+          "inventory_before": 17.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.7032489407733703,
+          "stockout": 0.0,
+          "inventory_before": 16.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.6192258892854156,
+          "stockout": 0.0,
+          "inventory_before": 16.739428723894548,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.6192258892854156,
+          "stockout": 0.0,
+          "inventory_before": 14.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.5772143635414382,
+          "stockout": 0.0,
+          "inventory_before": 14.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.5772143635414382,
+          "stockout": 0.0,
+          "inventory_before": 13.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.5772143635414382,
+          "stockout": 0.0,
+          "inventory_before": 13.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.5352028377974608,
+          "stockout": 0.0,
+          "inventory_before": 13.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.5352028377974608,
+          "stockout": 0.0,
+          "inventory_before": 12.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.5352028377974608,
+          "stockout": 0.0,
+          "inventory_before": 12.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.451179786309506,
+          "stockout": 0.0,
+          "inventory_before": 12.739428723894548,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.40916826056552863,
+          "stockout": 0.0,
+          "inventory_before": 10.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.40916826056552863,
+          "stockout": 0.0,
+          "inventory_before": 9.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.36715673482155126,
+          "stockout": 0.0,
+          "inventory_before": 9.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.36715673482155126,
+          "stockout": 0.0,
+          "inventory_before": 8.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.3251452090775739,
+          "stockout": 0.0,
+          "inventory_before": 8.739428723894548,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.3251452090775739,
+          "stockout": 0.0,
+          "inventory_before": 7.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.3251452090775739,
+          "stockout": 0.0,
+          "inventory_before": 7.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.3251452090775739,
+          "stockout": 0.0,
+          "inventory_before": 7.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.3251452090775739,
+          "stockout": 0.0,
+          "inventory_before": 7.739428723894548,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.07307605461370954,
+          "stockout": 0.0,
+          "inventory_before": 7.739428723894548,
+          "order": 0.0,
+          "demand": 6.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.0,
+          "stockout": 62.06833591480171,
+          "inventory_before": 1.739428723894548,
+          "order": 3.593785190138208,
+          "demand": 11.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.0,
+          "stockout": 62.06833591480171,
+          "inventory_before": 0.0,
+          "order": 5.333213914032756,
+          "demand": 11.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.0,
+          "stockout": 44.30082400144611,
+          "inventory_before": 0.0,
+          "order": 4.955372584938093,
+          "demand": 9.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.0,
+          "stockout": 33.34781907533772,
+          "inventory_before": 0.0,
+          "order": 4.955372584938093,
+          "demand": 8.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.0,
+          "stockout": 44.30082400144611,
+          "inventory_before": 0.0,
+          "order": 4.955372584938093,
+          "demand": 9.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.0,
+          "stockout": 99.06584863198806,
+          "inventory_before": 0.0,
+          "order": 4.955372584938093,
+          "demand": 14.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.0,
+          "stockout": 13.457143430362294,
+          "inventory_before": 0.0,
+          "order": 9.771374292155675,
+          "demand": 11.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.0,
+          "stockout": 57.26916313479585,
+          "inventory_before": 0.0,
+          "order": 9.771374292155675,
+          "demand": 15.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.0,
+          "stockout": 57.26916313479585,
+          "inventory_before": 0.0,
+          "order": 9.771374292155675,
+          "demand": 15.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.0,
+          "stockout": 79.17517298701263,
+          "inventory_before": 0.0,
+          "order": 9.771374292155675,
+          "demand": 17.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.2563404364212942,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 18.101669289124597,
+          "demand": 12.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.13030585918936208,
+          "stockout": 0.0,
+          "inventory_before": 6.101669289124597,
+          "order": 12.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.08829433344538468,
+          "stockout": 0.0,
+          "inventory_before": 3.1016692891245974,
+          "order": 15.0,
+          "demand": 16.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.2983519621652716,
+          "stockout": 0.0,
+          "inventory_before": 2.1016692891245974,
+          "order": 16.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.07744645842750703,
+          "stockout": 0.0,
+          "inventory_before": 7.101669289124597,
+          "order": 10.741788120622285,
+          "demand": 16.0
+        }
+      ],
+      "ss": [
+        {
+          "day": 1577,
+          "holding": 0.3188885675623665,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 0.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1584,
+          "holding": 1.165975437638869,
+          "stockout": 0.0,
+          "inventory_before": 7.590501937627941,
+          "order": 27.163201766075765,
+          "demand": 7.0
+        },
+        {
+          "day": 1591,
+          "holding": 1.1239639118948914,
+          "stockout": 0.0,
+          "inventory_before": 27.753703703703707,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1598,
+          "holding": 1.4066859203275095,
+          "stockout": 0.0,
+          "inventory_before": 26.753703703703707,
+          "order": 6.729629629629628,
+          "demand": 0.0
+        },
+        {
+          "day": 1605,
+          "holding": 1.3646743945835322,
+          "stockout": 0.0,
+          "inventory_before": 33.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1612,
+          "holding": 1.3226628688395548,
+          "stockout": 0.0,
+          "inventory_before": 32.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 1.2806513430955775,
+          "stockout": 0.0,
+          "inventory_before": 31.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1626,
+          "holding": 1.2386398173516,
+          "stockout": 0.0,
+          "inventory_before": 30.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 1.2386398173516,
+          "stockout": 0.0,
+          "inventory_before": 29.483333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1640,
+          "holding": 1.1966282916076227,
+          "stockout": 0.0,
+          "inventory_before": 29.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1647,
+          "holding": 1.1966282916076227,
+          "stockout": 0.0,
+          "inventory_before": 28.483333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 1.1966282916076227,
+          "stockout": 0.0,
+          "inventory_before": 28.483333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 1.1966282916076227,
+          "stockout": 0.0,
+          "inventory_before": 28.483333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1668,
+          "holding": 1.1546167658636453,
+          "stockout": 0.0,
+          "inventory_before": 28.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1675,
+          "holding": 1.0705937143756905,
+          "stockout": 0.0,
+          "inventory_before": 27.483333333333334,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1682,
+          "holding": 1.0705937143756905,
+          "stockout": 0.0,
+          "inventory_before": 25.483333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1689,
+          "holding": 1.028582188631713,
+          "stockout": 0.0,
+          "inventory_before": 25.483333333333334,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1696,
+          "holding": 1.028582188631713,
+          "stockout": 0.0,
+          "inventory_before": 24.483333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.9445591371437583,
+          "stockout": 0.0,
+          "inventory_before": 24.483333333333334,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1710,
+          "holding": 1.467680431778025,
+          "stockout": 0.0,
+          "inventory_before": 22.483333333333334,
+          "order": 12.451851851851856,
+          "demand": 0.0
+        },
+        {
+          "day": 1717,
+          "holding": 1.4256689060340477,
+          "stockout": 0.0,
+          "inventory_before": 34.93518518518519,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1724,
+          "holding": 1.4256689060340477,
+          "stockout": 0.0,
+          "inventory_before": 33.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1731,
+          "holding": 1.4256689060340477,
+          "stockout": 0.0,
+          "inventory_before": 33.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 1.3836573802900702,
+          "stockout": 0.0,
+          "inventory_before": 33.93518518518519,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1745,
+          "holding": 1.3836573802900702,
+          "stockout": 0.0,
+          "inventory_before": 32.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 1.3836573802900702,
+          "stockout": 0.0,
+          "inventory_before": 32.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1759,
+          "holding": 1.2996343288021155,
+          "stockout": 0.0,
+          "inventory_before": 32.93518518518519,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1766,
+          "holding": 1.2576228030581382,
+          "stockout": 0.0,
+          "inventory_before": 30.93518518518519,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1773,
+          "holding": 1.2576228030581382,
+          "stockout": 0.0,
+          "inventory_before": 29.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1780,
+          "holding": 1.2156112773141607,
+          "stockout": 0.0,
+          "inventory_before": 29.93518518518519,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1787,
+          "holding": 1.2156112773141607,
+          "stockout": 0.0,
+          "inventory_before": 28.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1794,
+          "holding": 1.1735997515701833,
+          "stockout": 0.0,
+          "inventory_before": 28.93518518518519,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1801,
+          "holding": 1.1735997515701833,
+          "stockout": 0.0,
+          "inventory_before": 27.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 1.1735997515701833,
+          "stockout": 0.0,
+          "inventory_before": 27.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1815,
+          "holding": 1.1735997515701833,
+          "stockout": 0.0,
+          "inventory_before": 27.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1822,
+          "holding": 1.1735997515701833,
+          "stockout": 0.0,
+          "inventory_before": 27.93518518518519,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.921530597106319,
+          "stockout": 0.0,
+          "inventory_before": 27.93518518518519,
+          "order": 0.0,
+          "demand": 6.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.45940381392256774,
+          "stockout": 0.0,
+          "inventory_before": 21.93518518518519,
+          "order": 0.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.0,
+          "stockout": 0.7099169859514121,
+          "inventory_before": 10.93518518518519,
+          "order": 0.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.0,
+          "stockout": 30.425013683634425,
+          "inventory_before": 0.0,
+          "order": 6.222222222222221,
+          "demand": 9.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.0,
+          "stockout": 19.472008757526034,
+          "inventory_before": 0.0,
+          "order": 6.222222222222221,
+          "demand": 8.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.0,
+          "stockout": 30.425013683634425,
+          "inventory_before": 0.0,
+          "order": 6.222222222222221,
+          "demand": 9.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.0,
+          "stockout": 85.19003831417638,
+          "inventory_before": 0.0,
+          "order": 6.222222222222221,
+          "demand": 14.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.0,
+          "stockout": 22.798476920270048,
+          "inventory_before": 0.0,
+          "order": 8.91851851851852,
+          "demand": 11.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.0,
+          "stockout": 66.6104966247036,
+          "inventory_before": 0.0,
+          "order": 8.91851851851852,
+          "demand": 15.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.0,
+          "stockout": 66.6104966247036,
+          "inventory_before": 0.0,
+          "order": 8.91851851851852,
+          "demand": 15.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.0,
+          "stockout": 88.51650647692038,
+          "inventory_before": 0.0,
+          "order": 8.91851851851852,
+          "demand": 17.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.10580680557742447,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 14.518518518518517,
+          "demand": 12.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.0,
+          "stockout": 5.273669038496646,
+          "inventory_before": 2.5185185185185173,
+          "order": 12.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.0,
+          "stockout": 16.226673964605038,
+          "inventory_before": 0.0,
+          "order": 14.518518518518517,
+          "demand": 16.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.14781833132140187,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 14.518518518518517,
+          "demand": 11.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.0,
+          "stockout": 10.831304871373872,
+          "inventory_before": 3.5185185185185173,
+          "order": 11.492592592592592,
+          "demand": 16.0
+        }
+      ],
+      "ml": [
+        {
+          "day": 1577,
+          "holding": 1.4622752491558249,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 27.216023730282394,
+          "demand": 15.0
+        },
+        {
+          "day": 1584,
+          "holding": 1.7983674551076438,
+          "stockout": 0.0,
+          "inventory_before": 34.806525667910336,
+          "order": 15.0,
+          "demand": 7.0
+        },
+        {
+          "day": 1591,
+          "holding": 2.0504366095715083,
+          "stockout": 0.0,
+          "inventory_before": 42.806525667910336,
+          "order": 7.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1598,
+          "holding": 2.0504366095715083,
+          "stockout": 0.0,
+          "inventory_before": 48.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1605,
+          "holding": 2.008425083827531,
+          "stockout": 0.0,
+          "inventory_before": 48.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1612,
+          "holding": 1.9664135580835536,
+          "stockout": 0.0,
+          "inventory_before": 47.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 1.924402032339576,
+          "stockout": 0.0,
+          "inventory_before": 46.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1626,
+          "holding": 1.8823905065955986,
+          "stockout": 0.0,
+          "inventory_before": 45.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 1.8823905065955986,
+          "stockout": 0.0,
+          "inventory_before": 44.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1640,
+          "holding": 1.8403789808516213,
+          "stockout": 0.0,
+          "inventory_before": 44.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1647,
+          "holding": 1.8403789808516213,
+          "stockout": 0.0,
+          "inventory_before": 43.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 1.8403789808516213,
+          "stockout": 0.0,
+          "inventory_before": 43.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 1.8403789808516213,
+          "stockout": 0.0,
+          "inventory_before": 43.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1668,
+          "holding": 1.7983674551076438,
+          "stockout": 0.0,
+          "inventory_before": 43.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1675,
+          "holding": 1.714344403619689,
+          "stockout": 0.0,
+          "inventory_before": 42.806525667910336,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1682,
+          "holding": 1.714344403619689,
+          "stockout": 0.0,
+          "inventory_before": 40.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1689,
+          "holding": 1.6723328778757118,
+          "stockout": 0.0,
+          "inventory_before": 40.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1696,
+          "holding": 1.6723328778757118,
+          "stockout": 0.0,
+          "inventory_before": 39.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1703,
+          "holding": 1.5883098263877569,
+          "stockout": 0.0,
+          "inventory_before": 39.806525667910336,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1710,
+          "holding": 1.5883098263877569,
+          "stockout": 0.0,
+          "inventory_before": 37.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1717,
+          "holding": 1.5462983006437796,
+          "stockout": 0.0,
+          "inventory_before": 37.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1724,
+          "holding": 1.5462983006437796,
+          "stockout": 0.0,
+          "inventory_before": 36.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1731,
+          "holding": 1.5462983006437796,
+          "stockout": 0.0,
+          "inventory_before": 36.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 1.5042867748998021,
+          "stockout": 0.0,
+          "inventory_before": 36.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1745,
+          "holding": 1.5042867748998021,
+          "stockout": 0.0,
+          "inventory_before": 35.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 1.5042867748998021,
+          "stockout": 0.0,
+          "inventory_before": 35.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1759,
+          "holding": 1.4202637234118474,
+          "stockout": 0.0,
+          "inventory_before": 35.806525667910336,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1766,
+          "holding": 1.37825219766787,
+          "stockout": 0.0,
+          "inventory_before": 33.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1773,
+          "holding": 1.37825219766787,
+          "stockout": 0.0,
+          "inventory_before": 32.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1780,
+          "holding": 1.3362406719238926,
+          "stockout": 0.0,
+          "inventory_before": 32.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1787,
+          "holding": 1.3362406719238926,
+          "stockout": 0.0,
+          "inventory_before": 31.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1794,
+          "holding": 1.2942291461799154,
+          "stockout": 0.0,
+          "inventory_before": 31.806525667910336,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1801,
+          "holding": 1.2942291461799154,
+          "stockout": 0.0,
+          "inventory_before": 30.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 1.2942291461799154,
+          "stockout": 0.0,
+          "inventory_before": 30.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1815,
+          "holding": 1.2942291461799154,
+          "stockout": 0.0,
+          "inventory_before": 30.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1822,
+          "holding": 1.2942291461799154,
+          "stockout": 0.0,
+          "inventory_before": 30.806525667910336,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 1.042159991716051,
+          "stockout": 0.0,
+          "inventory_before": 30.806525667910336,
+          "order": 0.0,
+          "demand": 6.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.5800332085322997,
+          "stockout": 0.0,
+          "inventory_before": 24.806525667910336,
+          "order": 0.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.1179064253485484,
+          "stockout": 0.0,
+          "inventory_before": 13.806525667910336,
+          "order": 0.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.7033573771417796,
+          "stockout": 0.0,
+          "inventory_before": 2.8065256679103356,
+          "order": 22.93548416596508,
+          "demand": 9.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.745368902885757,
+          "stockout": 0.0,
+          "inventory_before": 16.742009833875414,
+          "order": 9.0,
+          "demand": 8.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.7033573771417796,
+          "stockout": 0.0,
+          "inventory_before": 17.742009833875414,
+          "order": 8.0,
+          "demand": 9.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.4932997484218926,
+          "stockout": 0.0,
+          "inventory_before": 16.742009833875414,
+          "order": 9.0,
+          "demand": 14.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.5967732287073942,
+          "stockout": 0.0,
+          "inventory_before": 11.742009833875414,
+          "order": 13.462978395883066,
+          "demand": 11.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.42872712573148464,
+          "stockout": 0.0,
+          "inventory_before": 14.20498822975848,
+          "order": 11.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.42872712573148464,
+          "stockout": 0.0,
+          "inventory_before": 10.20498822975848,
+          "order": 15.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.3447040742435299,
+          "stockout": 0.0,
+          "inventory_before": 10.20498822975848,
+          "order": 15.0,
+          "demand": 17.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.40810132104701563,
+          "stockout": 0.0,
+          "inventory_before": 8.20498822975848,
+          "order": 13.509044141596647,
+          "demand": 12.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.2820667438150835,
+          "stockout": 0.0,
+          "inventory_before": 9.714032371355128,
+          "order": 12.0,
+          "demand": 15.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.2400552180711061,
+          "stockout": 0.0,
+          "inventory_before": 6.7140323713551275,
+          "order": 15.0,
+          "demand": 16.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.45011284679099306,
+          "stockout": 0.0,
+          "inventory_before": 5.7140323713551275,
+          "order": 16.0,
+          "demand": 11.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.1986151293972211,
+          "stockout": 0.0,
+          "inventory_before": 10.714032371355128,
+          "order": 10.013601911855684,
+          "demand": 16.0
+        }
+      ],
+      "fused": [
+        {
+          "day": 1577,
+          "holding": 3.1818060009114495,
+          "stockout": 0.0,
+          "inventory_before": 22.59050193762794,
+          "order": 68.146,
+          "demand": 15.0,
+          "risk_multiplier": 1.4
+        },
+        {
+          "day": 1584,
+          "holding": 3.2277666100753604,
+          "stockout": 0.0,
+          "inventory_before": 75.73650193762793,
+          "order": 8.094,
+          "demand": 7.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1591,
+          "holding": 3.546003917585989,
+          "stockout": 0.0,
+          "inventory_before": 76.83050193762793,
+          "order": 8.575,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1598,
+          "holding": 3.546003917585989,
+          "stockout": 0.0,
+          "inventory_before": 84.40550193762793,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1605,
+          "holding": 3.503992391842012,
+          "stockout": 0.0,
+          "inventory_before": 84.40550193762793,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1612,
+          "holding": 3.4619808660980342,
+          "stockout": 0.0,
+          "inventory_before": 83.40550193762793,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 3.419969340354057,
+          "stockout": 0.0,
+          "inventory_before": 82.40550193762793,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1626,
+          "holding": 3.3779578146100797,
+          "stockout": 0.0,
+          "inventory_before": 81.40550193762793,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 3.3779578146100797,
+          "stockout": 0.0,
+          "inventory_before": 80.40550193762793,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1640,
+          "holding": 3.7444663652005383,
+          "stockout": 0.0,
+          "inventory_before": 80.40550193762793,
+          "order": 9.724,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1647,
+          "holding": 3.7444663652005383,
+          "stockout": 0.0,
+          "inventory_before": 89.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1654,
+          "holding": 3.7444663652005383,
+          "stockout": 0.0,
+          "inventory_before": 89.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1661,
+          "holding": 3.7444663652005383,
+          "stockout": 0.0,
+          "inventory_before": 89.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1668,
+          "holding": 3.702454839456561,
+          "stockout": 0.0,
+          "inventory_before": 89.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1675,
+          "holding": 3.618431787968606,
+          "stockout": 0.0,
+          "inventory_before": 88.12950193762794,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1682,
+          "holding": 3.618431787968606,
+          "stockout": 0.0,
+          "inventory_before": 86.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1689,
+          "holding": 3.576420262224629,
+          "stockout": 0.0,
+          "inventory_before": 86.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1696,
+          "holding": 3.576420262224629,
+          "stockout": 0.0,
+          "inventory_before": 85.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1703,
+          "holding": 3.4923972107366743,
+          "stockout": 0.0,
+          "inventory_before": 85.12950193762794,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1710,
+          "holding": 3.4923972107366743,
+          "stockout": 0.0,
+          "inventory_before": 83.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1717,
+          "holding": 3.4503856849926966,
+          "stockout": 0.0,
+          "inventory_before": 83.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1724,
+          "holding": 3.4503856849926966,
+          "stockout": 0.0,
+          "inventory_before": 82.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1731,
+          "holding": 3.4503856849926966,
+          "stockout": 0.0,
+          "inventory_before": 82.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1738,
+          "holding": 3.4083741592487193,
+          "stockout": 0.0,
+          "inventory_before": 82.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1745,
+          "holding": 3.4083741592487193,
+          "stockout": 0.0,
+          "inventory_before": 81.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1752,
+          "holding": 3.4083741592487193,
+          "stockout": 0.0,
+          "inventory_before": 81.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1759,
+          "holding": 3.324351107760765,
+          "stockout": 0.0,
+          "inventory_before": 81.12950193762794,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1766,
+          "holding": 3.282339582016787,
+          "stockout": 0.0,
+          "inventory_before": 79.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1773,
+          "holding": 3.282339582016787,
+          "stockout": 0.0,
+          "inventory_before": 78.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1780,
+          "holding": 3.24032805627281,
+          "stockout": 0.0,
+          "inventory_before": 78.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1787,
+          "holding": 3.24032805627281,
+          "stockout": 0.0,
+          "inventory_before": 77.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1794,
+          "holding": 3.1983165305288326,
+          "stockout": 0.0,
+          "inventory_before": 77.12950193762794,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1801,
+          "holding": 3.1983165305288326,
+          "stockout": 0.0,
+          "inventory_before": 76.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1808,
+          "holding": 3.1983165305288326,
+          "stockout": 0.0,
+          "inventory_before": 76.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1815,
+          "holding": 3.1983165305288326,
+          "stockout": 0.0,
+          "inventory_before": 76.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1822,
+          "holding": 3.1983165305288326,
+          "stockout": 0.0,
+          "inventory_before": 76.12950193762794,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1829,
+          "holding": 2.946247376064968,
+          "stockout": 0.0,
+          "inventory_before": 76.12950193762794,
+          "order": 0.0,
+          "demand": 6.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1836,
+          "holding": 2.484120592881217,
+          "stockout": 0.0,
+          "inventory_before": 70.12950193762794,
+          "order": 0.0,
+          "demand": 11.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1843,
+          "holding": 2.0219938096974657,
+          "stockout": 0.0,
+          "inventory_before": 59.129501937627936,
+          "order": 0.0,
+          "demand": 11.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1850,
+          "holding": 3.101774044369172,
+          "stockout": 0.0,
+          "inventory_before": 48.129501937627936,
+          "order": 34.702,
+          "demand": 9.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1857,
+          "holding": 2.787779900958685,
+          "stockout": 0.0,
+          "inventory_before": 73.83150193762793,
+          "order": 0.526,
+          "demand": 8.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1864,
+          "holding": 2.76332919297569,
+          "stockout": 0.0,
+          "inventory_before": 66.35750193762793,
+          "order": 8.418,
+          "demand": 9.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1871,
+          "holding": 2.175167832560007,
+          "stockout": 0.0,
+          "inventory_before": 65.77550193762792,
+          "order": 0.0,
+          "demand": 14.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1878,
+          "holding": 2.7806799531079527,
+          "stockout": 0.0,
+          "inventory_before": 51.77550193762792,
+          "order": 25.413,
+          "demand": 11.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1885,
+          "holding": 2.402576221412156,
+          "stockout": 0.0,
+          "inventory_before": 66.18850193762792,
+          "order": 6.0,
+          "demand": 15.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1892,
+          "holding": 1.7724033352524953,
+          "stockout": 0.0,
+          "inventory_before": 57.18850193762792,
+          "order": 0.0,
+          "demand": 15.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1899,
+          "holding": 1.310276552068744,
+          "stockout": 0.0,
+          "inventory_before": 42.18850193762792,
+          "order": 6.0,
+          "demand": 17.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1906,
+          "holding": 1.7558507941093682,
+          "stockout": 0.0,
+          "inventory_before": 31.18850193762792,
+          "order": 22.606,
+          "demand": 12.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1913,
+          "holding": 1.6088104540054473,
+          "stockout": 0.0,
+          "inventory_before": 41.79450193762792,
+          "order": 11.5,
+          "demand": 15.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1920,
+          "holding": 1.417994104076302,
+          "stockout": 0.0,
+          "inventory_before": 38.29450193762792,
+          "order": 11.458,
+          "demand": 16.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1927,
+          "holding": 1.6536367519742712,
+          "stockout": 0.0,
+          "inventory_before": 33.75250193762792,
+          "order": 16.609,
+          "demand": 11.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1934,
+          "holding": 1.470088395998834,
+          "stockout": 0.0,
+          "inventory_before": 39.36150193762792,
+          "order": 11.631,
+          "demand": 16.0,
+          "risk_multiplier": 1.0
+        }
+      ]
+    },
+    "test_demand_daily": [
+      3.0,
+      2.0,
+      4.0,
+      0.0,
+      2.0,
+      0.0,
+      4.0,
+      2.0,
+      3.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.0,
+      3.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      1.0,
+      6.0,
+      2.0,
+      0.0,
+      0.0,
+      4.0,
+      3.0,
+      4.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      6.0,
+      2.0,
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      2.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      4.0,
+      3.0,
+      1.0,
+      1.0,
+      0.0,
+      2.0,
+      2.0,
+      2.0,
+      6.0,
+      2.0,
+      0.0,
+      2.0,
+      0.0,
+      1.0,
+      1.0,
+      5.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      2.0,
+      4.0,
+      3.0,
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      4.0,
+      2.0,
+      2.0,
+      2.0,
+      3.0,
+      2.0,
+      2.0,
+      3.0,
+      3.0,
+      0.0,
+      2.0,
+      3.0,
+      3.0,
+      3.0,
+      1.0,
+      0.0,
+      2.0,
+      5.0,
+      2.0,
+      2.0,
+      0.0,
+      2.0,
+      2.0,
+      4.0,
+      0.0,
+      2.0,
+      2.0,
+      2.0,
+      4.0,
+      2.0,
+      1.0,
+      0.0,
+      3.0,
+      1.0,
+      4.0,
+      2.0,
+      0.0,
+      0.0,
+      5.0,
+      3.0,
+      1.0,
+      3.0,
+      3.0,
+      1.0
+    ]
+  },
+  "HOBBIES_1_045_CA_2_evaluation": {
+    "series_id": "HOBBIES_1_045_CA_2_evaluation",
+    "price": 10.580000000000016,
+    "naive_cost": 156.8668763117173,
+    "fused_cost": 28.271957621250934,
+    "ml_cost": 14.517615441264844,
+    "trajectory": {
+      "baseline": [
+        {
+          "day": 1577,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1584,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1591,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1598,
+          "holding": 0.0,
+          "stockout": 10.993286212135004,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1605,
+          "holding": 0.0,
+          "stockout": 10.993286212135004,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 3.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.0,
+          "stockout": 21.57328621213502,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1647,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1668,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.0,
+          "stockout": 21.57328621213502,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 1.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.0,
+          "stockout": 21.57328621213502,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 1.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 2.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 2.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.0,
+          "stockout": 0.41328621213498795,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 1.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.0,
+          "stockout": 10.993286212135004,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.0,
+          "stockout": 10.993286212135004,
+          "inventory_before": 0.9609370309891316,
+          "order": 1.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.07957643644660564,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 1.9609370309891316,
+          "demand": 0.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.0,
+          "stockout": 42.73328621213505,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 6.0
+        }
+      ],
+      "sba": [
+        {
+          "day": 1577,
+          "holding": 0.05706647161625046,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.44530534950853173,
+          "demand": 1.0
+        },
+        {
+          "day": 1584,
+          "holding": 0.05706647161625046,
+          "stockout": 0.0,
+          "inventory_before": 1.4062423804976634,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1591,
+          "holding": 0.09764729353405874,
+          "stockout": 0.0,
+          "inventory_before": 1.4062423804976634,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1598,
+          "holding": 0.0,
+          "stockout": 6.2819556143347315,
+          "inventory_before": 2.4062423804976634,
+          "order": 0.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1605,
+          "holding": 0.0,
+          "stockout": 6.845406501415109,
+          "inventory_before": 0.0,
+          "order": 2.3529861529853404,
+          "demand": 3.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.05490529013155861,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.3529861529853404,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.014324468213750328,
+          "stockout": 0.0,
+          "inventory_before": 1.3529861529853404,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.07044616980438387,
+          "stockout": 0.0,
+          "inventory_before": 0.3529861529853404,
+          "order": 2.382961185564489,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.07044616980438387,
+          "stockout": 0.0,
+          "inventory_before": 1.7359473385498294,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.0,
+          "stockout": 13.373677158142826,
+          "inventory_before": 1.7359473385498294,
+          "order": 1.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1647,
+          "holding": 0.11102699172219214,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.7359473385498294,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 0.12381155654586844,
+          "stockout": 0.0,
+          "inventory_before": 2.7359473385498294,
+          "order": 0.31503957336226307,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 0.08323073462806016,
+          "stockout": 0.0,
+          "inventory_before": 3.0509869119120925,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1668,
+          "holding": 0.12381155654586844,
+          "stockout": 0.0,
+          "inventory_before": 2.0509869119120925,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.0,
+          "stockout": 10.040558471970076,
+          "inventory_before": 3.0509869119120925,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.07823772352061623,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.927948223401626,
+          "demand": 1.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.1188185454384245,
+          "stockout": 0.0,
+          "inventory_before": 1.9279482234016259,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.0,
+          "stockout": 11.342307796410816,
+          "inventory_before": 2.927948223401626,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.1188185454384245,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.927948223401626,
+          "demand": 0.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.04533461138168417,
+          "stockout": 0.0,
+          "inventory_before": 2.927948223401626,
+          "order": 0.18919552182620958,
+          "demand": 2.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.12649625521730073,
+          "stockout": 0.0,
+          "inventory_before": 1.1171437452278354,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.04533461138168417,
+          "stockout": 0.0,
+          "inventory_before": 3.1171437452278354,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.12649625521730073,
+          "stockout": 0.0,
+          "inventory_before": 1.1171437452278354,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.12649625521730073,
+          "stockout": 0.0,
+          "inventory_before": 3.1171437452278354,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.12649625521730073,
+          "stockout": 0.0,
+          "inventory_before": 3.1171437452278354,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.08591543329949244,
+          "stockout": 0.0,
+          "inventory_before": 3.1171437452278354,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.07774542731841924,
+          "stockout": 0.0,
+          "inventory_before": 2.1171437452278354,
+          "order": 0.7986732255541646,
+          "demand": 1.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.024893222695158382,
+          "stockout": 0.0,
+          "inventory_before": 1.915816970782,
+          "order": 0.6976063538016346,
+          "demand": 2.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.06547404461296666,
+          "stockout": 0.0,
+          "inventory_before": 0.6134233245836347,
+          "order": 2.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.024893222695158382,
+          "stockout": 0.0,
+          "inventory_before": 1.6134233245836347,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.024893222695158382,
+          "stockout": 0.0,
+          "inventory_before": 0.6134233245836347,
+          "order": 2.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.029161340215262118,
+          "stockout": 0.0,
+          "inventory_before": 0.6134233245836347,
+          "order": 2.1051757287900257,
+          "demand": 2.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.11032298405087868,
+          "stockout": 0.0,
+          "inventory_before": 0.7185990533736604,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.029161340215262118,
+          "stockout": 0.0,
+          "inventory_before": 2.7185990533736604,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.0697421621330704,
+          "stockout": 0.0,
+          "inventory_before": 0.7185990533736604,
+          "order": 2.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.11241449071285417,
+          "stockout": 0.0,
+          "inventory_before": 1.7185990533736604,
+          "order": 1.0515392878491125,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.0718336687950459,
+          "stockout": 0.0,
+          "inventory_before": 2.770138341222773,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.0718336687950459,
+          "stockout": 0.0,
+          "inventory_before": 1.770138341222773,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.0718336687950459,
+          "stockout": 0.0,
+          "inventory_before": 1.770138341222773,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.0,
+          "stockout": 4.154836181435572,
+          "inventory_before": 1.770138341222773,
+          "order": 0.837155025371219,
+          "demand": 3.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.1058061077972336,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.607293366593992,
+          "demand": 0.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.1058061077972336,
+          "stockout": 0.0,
+          "inventory_before": 2.607293366593992,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.06522528587942532,
+          "stockout": 0.0,
+          "inventory_before": 2.607293366593992,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.10401309709246254,
+          "stockout": 0.0,
+          "inventory_before": 1.607293366593992,
+          "order": 0.9558163038589362,
+          "demand": 0.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.10401309709246254,
+          "stockout": 0.0,
+          "inventory_before": 2.563109670452928,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.10401309709246254,
+          "stockout": 0.0,
+          "inventory_before": 2.563109670452928,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.06343227517465426,
+          "stockout": 0.0,
+          "inventory_before": 2.563109670452928,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.04710730307606234,
+          "stockout": 0.0,
+          "inventory_before": 1.5631096704529281,
+          "order": 0.5977170661635132,
+          "demand": 1.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.04710730307606234,
+          "stockout": 0.0,
+          "inventory_before": 1.1608267366164413,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.0,
+          "stockout": 8.878453126598064,
+          "inventory_before": 1.1608267366164413,
+          "order": 1.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.08768812499387062,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.1608267366164413,
+          "demand": 0.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.0,
+          "stockout": 39.362728613219,
+          "inventory_before": 2.1608267366164413,
+          "order": 0.11868851733261954,
+          "demand": 6.0
+        }
+      ],
+      "ss": [
+        {
+          "day": 1577,
+          "holding": 0.038995614528797365,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1584,
+          "holding": 0.1109209132420093,
+          "stockout": 0.0,
+          "inventory_before": 0.9609370309891316,
+          "order": 2.7723963023442018,
+          "demand": 1.0
+        },
+        {
+          "day": 1591,
+          "holding": 0.1109209132420093,
+          "stockout": 0.0,
+          "inventory_before": 2.7333333333333334,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1598,
+          "holding": 0.0,
+          "stockout": 2.821333333333337,
+          "inventory_before": 2.7333333333333334,
+          "order": 0.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1605,
+          "holding": 0.0,
+          "stockout": 0.47022222222222126,
+          "inventory_before": 0.0,
+          "order": 2.9555555555555557,
+          "demand": 3.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.07935805175038063,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 2.9555555555555557,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.03877722983257236,
+          "stockout": 0.0,
+          "inventory_before": 1.9555555555555557,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.08672271943176066,
+          "stockout": 0.0,
+          "inventory_before": 0.9555555555555557,
+          "order": 2.1814814814814816,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.08672271943176066,
+          "stockout": 0.0,
+          "inventory_before": 2.1370370370370373,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.0,
+          "stockout": 9.130148148148159,
+          "inventory_before": 2.1370370370370373,
+          "order": 1.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1647,
+          "holding": 0.12730354134956895,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 3.1370370370370373,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 0.12730354134956895,
+          "stockout": 0.0,
+          "inventory_before": 3.1370370370370373,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 0.08672271943176066,
+          "stockout": 0.0,
+          "inventory_before": 3.1370370370370373,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1668,
+          "holding": 0.08672271943176066,
+          "stockout": 0.0,
+          "inventory_before": 2.1370370370370373,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.0,
+          "stockout": 19.710148148148175,
+          "inventory_before": 2.1370370370370373,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.16983825469304945,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 5.185185185185185,
+          "demand": 1.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.16983825469304945,
+          "stockout": 0.0,
+          "inventory_before": 4.185185185185185,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.007514967021816345,
+          "stockout": 0.0,
+          "inventory_before": 4.185185185185185,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.21041907661085774,
+          "stockout": 0.0,
+          "inventory_before": 0.18518518518518512,
+          "order": 5.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.12925743277524118,
+          "stockout": 0.0,
+          "inventory_before": 5.185185185185185,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.12925743277524118,
+          "stockout": 0.0,
+          "inventory_before": 3.185185185185185,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.04809578893962462,
+          "stockout": 0.0,
+          "inventory_before": 3.185185185185185,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.21462745814307488,
+          "stockout": 0.0,
+          "inventory_before": 1.1851851851851851,
+          "order": 4.103703703703704,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.21462745814307488,
+          "stockout": 0.0,
+          "inventory_before": 5.288888888888889,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.21462745814307488,
+          "stockout": 0.0,
+          "inventory_before": 5.288888888888889,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.17404663622526662,
+          "stockout": 0.0,
+          "inventory_before": 5.288888888888889,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.13346581430745832,
+          "stockout": 0.0,
+          "inventory_before": 4.288888888888889,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.05230417047184177,
+          "stockout": 0.0,
+          "inventory_before": 3.2888888888888888,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.157213110096398,
+          "stockout": 0.0,
+          "inventory_before": 1.2888888888888888,
+          "order": 3.5851851851851855,
+          "demand": 1.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.07605146626078145,
+          "stockout": 0.0,
+          "inventory_before": 3.8740740740740742,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.11663228817858973,
+          "stockout": 0.0,
+          "inventory_before": 1.8740740740740742,
+          "order": 3.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.035470644342973166,
+          "stockout": 0.0,
+          "inventory_before": 2.8740740740740742,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.20200231354642342,
+          "stockout": 0.0,
+          "inventory_before": 0.8740740740740742,
+          "order": 4.103703703703704,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.12084066971080687,
+          "stockout": 0.0,
+          "inventory_before": 4.977777777777778,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.08025984779299859,
+          "stockout": 0.0,
+          "inventory_before": 2.977777777777778,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.20621069507864057,
+          "stockout": 0.0,
+          "inventory_before": 1.9777777777777779,
+          "order": 3.1037037037037036,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.1656298731608323,
+          "stockout": 0.0,
+          "inventory_before": 5.0814814814814815,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.125049051243024,
+          "stockout": 0.0,
+          "inventory_before": 4.0814814814814815,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.08446822932521575,
+          "stockout": 0.0,
+          "inventory_before": 3.0814814814814815,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.07605146626078145,
+          "stockout": 0.0,
+          "inventory_before": 2.0814814814814815,
+          "order": 2.7925925925925927,
+          "demand": 3.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.19779393201420628,
+          "stockout": 0.0,
+          "inventory_before": 1.8740740740740742,
+          "order": 3.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.19779393201420628,
+          "stockout": 0.0,
+          "inventory_before": 4.874074074074074,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.157213110096398,
+          "stockout": 0.0,
+          "inventory_before": 4.874074074074074,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.157213110096398,
+          "stockout": 0.0,
+          "inventory_before": 3.8740740740740742,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.157213110096398,
+          "stockout": 0.0,
+          "inventory_before": 3.8740740740740742,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.157213110096398,
+          "stockout": 0.0,
+          "inventory_before": 3.8740740740740742,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.11663228817858973,
+          "stockout": 0.0,
+          "inventory_before": 3.8740740740740742,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.07605146626078145,
+          "stockout": 0.0,
+          "inventory_before": 2.8740740740740742,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.11039486555048213,
+          "stockout": 0.0,
+          "inventory_before": 1.8740740740740742,
+          "order": 1.8462962962962957,
+          "demand": 1.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.0,
+          "stockout": 2.958481481481491,
+          "inventory_before": 2.72037037037037,
+          "order": 0.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.1509756874682904,
+          "stockout": 0.0,
+          "inventory_before": 0.0,
+          "order": 3.72037037037037,
+          "demand": 0.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.0,
+          "stockout": 24.118481481481524,
+          "inventory_before": 3.72037037037037,
+          "order": 0.0,
+          "demand": 6.0
+        }
+      ],
+      "ml": [
+        {
+          "day": 1577,
+          "holding": 0.25749924985105677,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 5.384406352459125,
+          "demand": 1.0
+        },
+        {
+          "day": 1584,
+          "holding": 0.25749924985105677,
+          "stockout": 0.0,
+          "inventory_before": 6.345343383448257,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1591,
+          "holding": 0.29808007176886503,
+          "stockout": 0.0,
+          "inventory_before": 6.345343383448257,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1598,
+          "holding": 0.17955858571021638,
+          "stockout": 0.0,
+          "inventory_before": 7.345343383448257,
+          "order": 0.07937196790394996,
+          "demand": 3.0
+        },
+        {
+          "day": 1605,
+          "holding": 0.17955858571021638,
+          "stockout": 0.0,
+          "inventory_before": 4.424715351352207,
+          "order": 3.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.26072022954583296,
+          "stockout": 0.0,
+          "inventory_before": 4.424715351352207,
+          "order": 3.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.22013940762802467,
+          "stockout": 0.0,
+          "inventory_before": 6.424715351352207,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.3208002080360036,
+          "stockout": 0.0,
+          "inventory_before": 5.424715351352207,
+          "order": 3.480501765387002,
+          "demand": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.3208002080360036,
+          "stockout": 0.0,
+          "inventory_before": 7.905217116739209,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.1990577422825788,
+          "stockout": 0.0,
+          "inventory_before": 7.905217116739209,
+          "order": 1.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1647,
+          "holding": 0.36138102995381194,
+          "stockout": 0.0,
+          "inventory_before": 4.905217116739209,
+          "order": 4.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1654,
+          "holding": 0.36138102995381194,
+          "stockout": 0.0,
+          "inventory_before": 8.905217116739209,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1661,
+          "holding": 0.3208002080360036,
+          "stockout": 0.0,
+          "inventory_before": 8.905217116739209,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1668,
+          "holding": 0.3336901843632025,
+          "stockout": 0.0,
+          "inventory_before": 7.905217116739209,
+          "order": 0.31763714281849786,
+          "demand": 0.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.17136689669196942,
+          "stockout": 0.0,
+          "inventory_before": 8.222854259557707,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.33565238754114435,
+          "stockout": 0.0,
+          "inventory_before": 4.222854259557707,
+          "order": 5.048352967860435,
+          "demand": 1.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.3762332094589526,
+          "stockout": 0.0,
+          "inventory_before": 8.271207227418142,
+          "order": 1.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.21390992178771953,
+          "stockout": 0.0,
+          "inventory_before": 9.271207227418142,
+          "order": 0.0,
+          "demand": 4.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.3762332094589526,
+          "stockout": 0.0,
+          "inventory_before": 5.271207227418142,
+          "order": 4.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.2950715656233361,
+          "stockout": 0.0,
+          "inventory_before": 9.271207227418142,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.36385087732149196,
+          "stockout": 0.0,
+          "inventory_before": 7.271207227418142,
+          "order": 1.6948723177036769,
+          "demand": 0.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.2826892334858754,
+          "stockout": 0.0,
+          "inventory_before": 8.966079545121818,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.36385087732149196,
+          "stockout": 0.0,
+          "inventory_before": 6.9660795451218185,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.36385087732149196,
+          "stockout": 0.0,
+          "inventory_before": 8.966079545121818,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.36385087732149196,
+          "stockout": 0.0,
+          "inventory_before": 8.966079545121818,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.3232700554036837,
+          "stockout": 0.0,
+          "inventory_before": 8.966079545121818,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.2826892334858754,
+          "stockout": 0.0,
+          "inventory_before": 7.9660795451218185,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.2447752484218972,
+          "stockout": 0.0,
+          "inventory_before": 6.9660795451218185,
+          "order": 1.065716679155278,
+          "demand": 2.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.2853560703397055,
+          "stockout": 0.0,
+          "inventory_before": 6.031796224277096,
+          "order": 2.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.2447752484218972,
+          "stockout": 0.0,
+          "inventory_before": 7.031796224277096,
+          "order": 1.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.2447752484218972,
+          "stockout": 0.0,
+          "inventory_before": 6.031796224277096,
+          "order": 2.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.23469733647326457,
+          "stockout": 0.0,
+          "inventory_before": 6.031796224277096,
+          "order": 1.7516582594348566,
+          "demand": 2.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.31585898030888115,
+          "stockout": 0.0,
+          "inventory_before": 5.783454483711953,
+          "order": 2.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.23469733647326457,
+          "stockout": 0.0,
+          "inventory_before": 7.783454483711953,
+          "order": 0.0,
+          "demand": 2.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.27527815839107284,
+          "stockout": 0.0,
+          "inventory_before": 5.783454483711953,
+          "order": 2.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.2929268878652156,
+          "stockout": 0.0,
+          "inventory_before": 6.783454483711953,
+          "order": 0.43490320402795657,
+          "demand": 0.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.2523460659474073,
+          "stockout": 0.0,
+          "inventory_before": 7.21835768773991,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.2523460659474073,
+          "stockout": 0.0,
+          "inventory_before": 6.21835768773991,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.2523460659474073,
+          "stockout": 0.0,
+          "inventory_before": 6.21835768773991,
+          "order": 1.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.2137532576711997,
+          "stockout": 0.0,
+          "inventory_before": 6.21835768773991,
+          "order": 2.048988994003797,
+          "demand": 3.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.3354957234246245,
+          "stockout": 0.0,
+          "inventory_before": 5.267346681743707,
+          "order": 3.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.3354957234246245,
+          "stockout": 0.0,
+          "inventory_before": 8.267346681743707,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.29491490150681626,
+          "stockout": 0.0,
+          "inventory_before": 8.267346681743707,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.35618341819661453,
+          "stockout": 0.0,
+          "inventory_before": 7.267346681743707,
+          "order": 1.5097899400335084,
+          "demand": 0.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.35618341819661453,
+          "stockout": 0.0,
+          "inventory_before": 8.777136621777215,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.35618341819661453,
+          "stockout": 0.0,
+          "inventory_before": 8.777136621777215,
+          "order": 0.0,
+          "demand": 0.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.3156025962788062,
+          "stockout": 0.0,
+          "inventory_before": 8.777136621777215,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.27502177436099795,
+          "stockout": 0.0,
+          "inventory_before": 7.777136621777215,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.2344409524431897,
+          "stockout": 0.0,
+          "inventory_before": 6.777136621777215,
+          "order": 0.0,
+          "demand": 1.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.11269848668976484,
+          "stockout": 0.0,
+          "inventory_before": 5.777136621777215,
+          "order": 0.0,
+          "demand": 3.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.21646583064903963,
+          "stockout": 0.0,
+          "inventory_before": 2.777136621777215,
+          "order": 2.5570537770142616,
+          "demand": 0.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.0015120143164584223,
+          "stockout": 0.0,
+          "inventory_before": 5.334190398791477,
+          "order": 0.7030689332033466,
+          "demand": 6.0
+        }
+      ],
+      "fused": [
+        {
+          "day": 1577,
+          "holding": 0.4935008200082501,
+          "stockout": 0.0,
+          "inventory_before": 1.9609370309891316,
+          "order": 11.2,
+          "demand": 1.0,
+          "risk_multiplier": 1.4
+        },
+        {
+          "day": 1584,
+          "holding": 0.4529199980904418,
+          "stockout": 0.0,
+          "inventory_before": 12.160937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1591,
+          "holding": 0.4529199980904418,
+          "stockout": 0.0,
+          "inventory_before": 11.160937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1598,
+          "holding": 0.33117753233701697,
+          "stockout": 0.0,
+          "inventory_before": 11.160937030989132,
+          "order": 0.0,
+          "demand": 3.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1605,
+          "holding": 0.36786259535071564,
+          "stockout": 0.0,
+          "inventory_before": 8.160937030989132,
+          "order": 3.904,
+          "demand": 3.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1612,
+          "holding": 0.4896050611041405,
+          "stockout": 0.0,
+          "inventory_before": 9.064937030989132,
+          "order": 4.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1619,
+          "holding": 0.4084434172685239,
+          "stockout": 0.0,
+          "inventory_before": 12.064937030989132,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1626,
+          "holding": 0.4084839980904417,
+          "stockout": 0.0,
+          "inventory_before": 10.064937030989132,
+          "order": 1.001,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1633,
+          "holding": 0.4294237022000308,
+          "stockout": 0.0,
+          "inventory_before": 10.065937030989131,
+          "order": 1.516,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1640,
+          "holding": 0.3901414665835924,
+          "stockout": 0.0,
+          "inventory_before": 10.581937030989131,
+          "order": 3.032,
+          "demand": 4.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1647,
+          "holding": 1.1488405131589359,
+          "stockout": 0.0,
+          "inventory_before": 9.613937030989131,
+          "order": 18.696,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1654,
+          "holding": 1.1488405131589359,
+          "stockout": 0.0,
+          "inventory_before": 28.309937030989133,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1661,
+          "holding": 1.1082596912411278,
+          "stockout": 0.0,
+          "inventory_before": 28.309937030989133,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1668,
+          "holding": 1.1082596912411278,
+          "stockout": 0.0,
+          "inventory_before": 27.309937030989133,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1675,
+          "holding": 0.9459364035698946,
+          "stockout": 0.0,
+          "inventory_before": 27.309937030989133,
+          "order": 0.0,
+          "demand": 4.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1682,
+          "holding": 0.9053555816520863,
+          "stockout": 0.0,
+          "inventory_before": 23.309937030989133,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1689,
+          "holding": 0.9053555816520863,
+          "stockout": 0.0,
+          "inventory_before": 22.309937030989133,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1696,
+          "holding": 0.7430322939808532,
+          "stockout": 0.0,
+          "inventory_before": 22.309937030989133,
+          "order": 0.0,
+          "demand": 4.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1703,
+          "holding": 0.7430322939808532,
+          "stockout": 0.0,
+          "inventory_before": 18.309937030989133,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1710,
+          "holding": 0.6879235378164695,
+          "stockout": 0.0,
+          "inventory_before": 18.309937030989133,
+          "order": 0.642,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1717,
+          "holding": 0.6879235378164695,
+          "stockout": 0.0,
+          "inventory_before": 16.951937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1724,
+          "holding": 0.606761893980853,
+          "stockout": 0.0,
+          "inventory_before": 16.951937030989132,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1731,
+          "holding": 0.606761893980853,
+          "stockout": 0.0,
+          "inventory_before": 14.951937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1738,
+          "holding": 0.606761893980853,
+          "stockout": 0.0,
+          "inventory_before": 14.951937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1745,
+          "holding": 0.606761893980853,
+          "stockout": 0.0,
+          "inventory_before": 14.951937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1752,
+          "holding": 0.5661810720630447,
+          "stockout": 0.0,
+          "inventory_before": 14.951937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1759,
+          "holding": 0.5256002501452365,
+          "stockout": 0.0,
+          "inventory_before": 13.951937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1766,
+          "holding": 0.4444386063096199,
+          "stockout": 0.0,
+          "inventory_before": 12.951937030989132,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1773,
+          "holding": 0.42905847480277054,
+          "stockout": 0.0,
+          "inventory_before": 10.951937030989132,
+          "order": 0.621,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1780,
+          "holding": 0.39898808576167466,
+          "stockout": 0.0,
+          "inventory_before": 10.572937030989133,
+          "order": 1.259,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1787,
+          "holding": 0.421551022747976,
+          "stockout": 0.0,
+          "inventory_before": 9.831937030989133,
+          "order": 2.556,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1794,
+          "holding": 0.45754621178907195,
+          "stockout": 0.0,
+          "inventory_before": 10.387937030989132,
+          "order": 2.887,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1801,
+          "holding": 0.5161043378164692,
+          "stockout": 0.0,
+          "inventory_before": 11.274937030989133,
+          "order": 1.443,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1808,
+          "holding": 0.4349426939808527,
+          "stockout": 0.0,
+          "inventory_before": 12.717937030989132,
+          "order": 0.0,
+          "demand": 2.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1815,
+          "holding": 0.4519866391863322,
+          "stockout": 0.0,
+          "inventory_before": 10.717937030989132,
+          "order": 1.42,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1822,
+          "holding": 0.47954101726852405,
+          "stockout": 0.0,
+          "inventory_before": 11.137937030989132,
+          "order": 0.679,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1829,
+          "holding": 0.4696798775424966,
+          "stockout": 0.0,
+          "inventory_before": 11.816937030989132,
+          "order": 0.757,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1836,
+          "holding": 0.42909905562468836,
+          "stockout": 0.0,
+          "inventory_before": 11.573937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1843,
+          "holding": 0.38851823370688005,
+          "stockout": 0.0,
+          "inventory_before": 10.573937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1850,
+          "holding": 0.3422560967205786,
+          "stockout": 0.0,
+          "inventory_before": 9.573937030989132,
+          "order": 1.86,
+          "demand": 3.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1857,
+          "holding": 0.5296177515150995,
+          "stockout": 0.0,
+          "inventory_before": 8.433937030989132,
+          "order": 4.617,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1864,
+          "holding": 0.5296177515150995,
+          "stockout": 0.0,
+          "inventory_before": 13.050937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1871,
+          "holding": 0.48903692959729117,
+          "stockout": 0.0,
+          "inventory_before": 13.050937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1878,
+          "holding": 0.48903692959729117,
+          "stockout": 0.0,
+          "inventory_before": 12.050937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1885,
+          "holding": 0.48903692959729117,
+          "stockout": 0.0,
+          "inventory_before": 12.050937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1892,
+          "holding": 0.48903692959729117,
+          "stockout": 0.0,
+          "inventory_before": 12.050937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1899,
+          "holding": 0.4484561076794829,
+          "stockout": 0.0,
+          "inventory_before": 12.050937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1906,
+          "holding": 0.40787528576167464,
+          "stockout": 0.0,
+          "inventory_before": 11.050937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1913,
+          "holding": 0.3672944638438664,
+          "stockout": 0.0,
+          "inventory_before": 10.050937030989132,
+          "order": 0.0,
+          "demand": 1.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1920,
+          "holding": 0.24555199809044154,
+          "stockout": 0.0,
+          "inventory_before": 9.050937030989132,
+          "order": 0.0,
+          "demand": 3.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1927,
+          "holding": 0.24555199809044154,
+          "stockout": 0.0,
+          "inventory_before": 6.050937030989132,
+          "order": 0.0,
+          "demand": 0.0,
+          "risk_multiplier": 1.0
+        },
+        {
+          "day": 1934,
+          "holding": 0.0020670665835918626,
+          "stockout": 0.0,
+          "inventory_before": 6.050937030989132,
+          "order": 0.0,
+          "demand": 6.0,
+          "risk_multiplier": 1.0
+        }
+      ]
+    },
+    "test_demand_daily": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      2.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      2.0,
+      1.0,
+      0.0,
+      2.0
+    ]
+  }
+}
