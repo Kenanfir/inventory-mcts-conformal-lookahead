@@ -34,3 +34,8 @@ This directory is part of the canonical project layout.
 Use the package versions and command forms recorded in the project analysis
 notes. Results and figure sources are stored under `research/` and
 `paper/figures/` respectively.
+
+- `run_interval_metrics.py` scores the one-step daily demand intervals (rolling refit + ACI,
+  rolling without ACI, static split conformal, Gaussian from calibration residuals) with the
+  interval (Winkler) score and pinball loss over the eight balanced samples; writes
+  `research/interval_metrics.json` (article Table 11). It needs the M5 files in `research/data/`.

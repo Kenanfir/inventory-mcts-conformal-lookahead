@@ -1,0 +1,407 @@
+{
+  "alpha": 0.1,
+  "methods": [
+    "rolling_aci",
+    "rolling",
+    "static",
+    "gaussian"
+  ],
+  "per_seed": {
+    "0": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9019383394383397,
+        "width": 2.8842215638894393,
+        "interval_score": 4.943994353507241,
+        "pinball": 0.12359985883768104,
+        "scaled_interval_score": 8.418020991164651,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9091965133631801,
+        "width": 2.742910448670025,
+        "interval_score": 5.049424478542427,
+        "pinball": 0.1262356119635607,
+        "scaled_interval_score": 8.351516349809575,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8873965540632207,
+        "width": 2.523298687571686,
+        "interval_score": 6.379752120442601,
+        "pinball": 0.159493803011065,
+        "scaled_interval_score": 9.089812112230106,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.910756681590015,
+        "width": 2.9107294343996615,
+        "interval_score": 4.962671017118386,
+        "pinball": 0.12406677542795969,
+        "scaled_interval_score": 8.182094055022297,
+        "n_positive_demand": 324
+      }
+    },
+    "1": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9017348392348393,
+        "width": 3.4354178799090693,
+        "interval_score": 5.937882304725421,
+        "pinball": 0.1484470576181356,
+        "scaled_interval_score": 8.391900574982811,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9124270790937457,
+        "width": 3.350965499124146,
+        "interval_score": 6.000310010186462,
+        "pinball": 0.15000775025466162,
+        "scaled_interval_score": 8.29636341777041,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8988010446343779,
+        "width": 3.244239911307476,
+        "interval_score": 6.865633157687059,
+        "pinball": 0.1716408289421765,
+        "scaled_interval_score": 8.782918108450934,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.9139194139194139,
+        "width": 3.5897685620102937,
+        "interval_score": 5.877252003588591,
+        "pinball": 0.14693130008971483,
+        "scaled_interval_score": 8.166258486366244,
+        "n_positive_demand": 324
+      }
+    },
+    "2": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.901963776963777,
+        "width": 3.117026716283857,
+        "interval_score": 5.361790731146021,
+        "pinball": 0.13404476827865058,
+        "scaled_interval_score": 8.561089390922913,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9129103920770587,
+        "width": 3.021141052434463,
+        "interval_score": 5.384651453383978,
+        "pinball": 0.13461628633459952,
+        "scaled_interval_score": 8.500374702121553,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8992334825668159,
+        "width": 2.984249289070666,
+        "interval_score": 6.1043128618726215,
+        "pinball": 0.1526078215468156,
+        "scaled_interval_score": 9.125702296195545,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.9145977479310812,
+        "width": 3.211554083518767,
+        "interval_score": 5.282672824564819,
+        "pinball": 0.1320668206141205,
+        "scaled_interval_score": 8.358602597583552,
+        "n_positive_demand": 324
+      }
+    },
+    "3": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9016924433591103,
+        "width": 3.3158927475404543,
+        "interval_score": 5.385941486369676,
+        "pinball": 0.13464853715924197,
+        "scaled_interval_score": 8.295220623156553,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9121642246642245,
+        "width": 3.19823330359334,
+        "interval_score": 5.457108159031428,
+        "pinball": 0.13642770397578574,
+        "scaled_interval_score": 8.120270396017231,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.9038122371455705,
+        "width": 3.129195229674761,
+        "interval_score": 5.826192849787961,
+        "pinball": 0.14565482124469906,
+        "scaled_interval_score": 8.651351610298725,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.9134615384615384,
+        "width": 3.4061817245553616,
+        "interval_score": 5.411502946013031,
+        "pinball": 0.13528757365032584,
+        "scaled_interval_score": 8.108595290681949,
+        "n_positive_demand": 324
+      }
+    },
+    "4": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9016585266585269,
+        "width": 3.175407905721958,
+        "interval_score": 5.214969263459635,
+        "pinball": 0.13037423158649095,
+        "scaled_interval_score": 8.580204079469594,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.911714828381495,
+        "width": 3.10106154076026,
+        "interval_score": 5.277108587767483,
+        "pinball": 0.1319277146941871,
+        "scaled_interval_score": 8.455308069184044,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8994115452448787,
+        "width": 2.994155835902816,
+        "interval_score": 5.691700982754725,
+        "pinball": 0.14229252456886812,
+        "scaled_interval_score": 9.028653052825339,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.912257495590829,
+        "width": 3.268566234768768,
+        "interval_score": 5.193020293824893,
+        "pinball": 0.1298255073456224,
+        "scaled_interval_score": 8.362163578953377,
+        "n_positive_demand": 324
+      }
+    },
+    "5": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9017348392348393,
+        "width": 3.2632845592143362,
+        "interval_score": 5.509099706213001,
+        "pinball": 0.13772749265532508,
+        "scaled_interval_score": 8.49306360720718,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9107482024148692,
+        "width": 3.1227229063785495,
+        "interval_score": 5.6141032922294904,
+        "pinball": 0.1403525823057373,
+        "scaled_interval_score": 8.428564327846875,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8991486908153575,
+        "width": 2.988719159059677,
+        "interval_score": 6.122818020697615,
+        "pinball": 0.15307045051744037,
+        "scaled_interval_score": 9.142711594354203,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.9120200786867454,
+        "width": 3.3264793486426316,
+        "interval_score": 5.5354959683570035,
+        "pinball": 0.13838739920892512,
+        "scaled_interval_score": 8.374564961192462,
+        "n_positive_demand": 324
+      }
+    },
+    "6": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9020824854158188,
+        "width": 3.054690588772615,
+        "interval_score": 5.204960784444135,
+        "pinball": 0.13012401961110343,
+        "scaled_interval_score": 8.07034035171288,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9101461809795143,
+        "width": 2.916150046732003,
+        "interval_score": 5.323965443043211,
+        "pinball": 0.13309913607608032,
+        "scaled_interval_score": 8.011114312051378,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8956552706552706,
+        "width": 2.766257887477409,
+        "interval_score": 5.845140648007861,
+        "pinball": 0.14612851620019657,
+        "scaled_interval_score": 8.545041191523886,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.9131986840320174,
+        "width": 3.1220593883501793,
+        "interval_score": 5.213975894188018,
+        "pinball": 0.1303493973547005,
+        "scaled_interval_score": 7.869892958460571,
+        "n_positive_demand": 324
+      }
+    },
+    "7": {
+      "n_series": 324,
+      "rolling_aci": {
+        "coverage": 0.9018026726360061,
+        "width": 3.0218753926566997,
+        "interval_score": 5.045597475629981,
+        "pinball": 0.12613993689074954,
+        "scaled_interval_score": 8.268656623766217,
+        "n_positive_demand": 324
+      },
+      "rolling": {
+        "coverage": 0.9106549314882647,
+        "width": 2.940967804133833,
+        "interval_score": 5.1471214840056705,
+        "pinball": 0.1286780371001418,
+        "scaled_interval_score": 8.170277830573179,
+        "n_positive_demand": 324
+      },
+      "static": {
+        "coverage": 0.8963675213675213,
+        "width": 2.8472659939122904,
+        "interval_score": 6.180153601447939,
+        "pinball": 0.15450384003619852,
+        "scaled_interval_score": 8.710019839048382,
+        "n_positive_demand": 324
+      },
+      "gaussian": {
+        "coverage": 0.9109262650929317,
+        "width": 3.106392687372391,
+        "interval_score": 5.072377022906024,
+        "pinball": 0.12680942557265065,
+        "scaled_interval_score": 8.134120175566245,
+        "n_positive_demand": 324
+      }
+    }
+  },
+  "summary_over_draws": {
+    "rolling_aci": {
+      "coverage": {
+        "mean": 0.9018259903676572,
+        "min": 0.9016585266585269,
+        "max": 0.9020824854158188
+      },
+      "width": {
+        "mean": 3.158477169248554,
+        "min": 2.8842215638894393,
+        "max": 3.4354178799090693
+      },
+      "interval_score": {
+        "mean": 5.325529513186889,
+        "min": 4.943994353507241,
+        "max": 5.937882304725421
+      },
+      "pinball": {
+        "mean": 0.13313823782967227,
+        "min": 0.12359985883768104,
+        "max": 0.1484470576181356
+      },
+      "scaled_interval_score": {
+        "mean": 8.38481203029785,
+        "min": 8.07034035171288,
+        "max": 8.580204079469594
+      }
+    },
+    "rolling": {
+      "coverage": {
+        "mean": 0.911245294057794,
+        "min": 0.9091965133631801,
+        "max": 0.9129103920770587
+      },
+      "width": {
+        "mean": 3.0492690752283274,
+        "min": 2.742910448670025,
+        "max": 3.350965499124146
+      },
+      "interval_score": {
+        "mean": 5.406724113523769,
+        "min": 5.049424478542427,
+        "max": 6.000310010186462
+      },
+      "pinball": {
+        "mean": 0.13516810283809427,
+        "min": 0.1262356119635607,
+        "max": 0.15000775025466162
+      },
+      "scaled_interval_score": {
+        "mean": 8.291723675671781,
+        "min": 8.011114312051378,
+        "max": 8.500374702121553
+      }
+    },
+    "static": {
+      "coverage": {
+        "mean": 0.8974782933116267,
+        "min": 0.8873965540632207,
+        "max": 0.9038122371455705
+      },
+      "width": {
+        "mean": 2.9346727492470976,
+        "min": 2.523298687571686,
+        "max": 3.244239911307476
+      },
+      "interval_score": {
+        "mean": 6.126963030337298,
+        "min": 5.691700982754725,
+        "max": 6.865633157687059
+      },
+      "pinball": {
+        "mean": 0.15317407575843245,
+        "min": 0.14229252456886812,
+        "max": 0.1716408289421765
+      },
+      "scaled_interval_score": {
+        "mean": 8.88452622561589,
+        "min": 8.545041191523886,
+        "max": 9.142711594354203
+      }
+    },
+    "gaussian": {
+      "coverage": {
+        "mean": 0.9126422381630714,
+        "min": 0.910756681590015,
+        "max": 0.9145977479310812
+      },
+      "width": {
+        "mean": 3.242716432952257,
+        "min": 2.9107294343996615,
+        "max": 3.5897685620102937
+      },
+      "interval_score": {
+        "mean": 5.318620996320096,
+        "min": 4.962671017118386,
+        "max": 5.877252003588591
+      },
+      "pinball": {
+        "mean": 0.13296552490800245,
+        "min": 0.12406677542795969,
+        "max": 0.14693130008971483
+      },
+      "scaled_interval_score": {
+        "mean": 8.194536512978338,
+        "min": 7.869892958460571,
+        "max": 8.374564961192462
+      }
+    }
+  },
+  "lowest_interval_score_draws": {
+    "rolling_aci": 5,
+    "rolling": 0,
+    "static": 0,
+    "gaussian": 3
+  }
+}
